@@ -9,16 +9,18 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-red-700 to-red-800 text-white">
         <div className="relative max-w-6xl mx-auto px-4 py-24 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">{home.hero.title}</h1>
-          <div className="mt-6 space-y-1 text-lg md:text-xl font-medium">
-            <p>1995'den beri...</p>
-            <p>iyi günde kötü günde</p>
-            <p>A kalite sigortacılık hep yanınızda.</p>
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-sm animate-pulse">{home.hero.title}</h1>
+          <div className="mt-6 space-y-1 font-medium">
+            <p className="text-2xl md:text-3xl">iyi günde kötü günde</p>
+            <p className="text-base md:text-lg opacity-90">1995'den beri...</p>
+            <p className="text-base md:text-lg opacity-90">A kalite sigortacılık hep yanınızda.</p>
           </div>
-          <div className="mt-10 flex items-center justify-center gap-3">
-            <a href="/teklif-al" className="inline-flex items-center rounded-lg bg-white px-5 py-3 text-red-800 font-semibold hover:bg-red-50 transition">Teklif Al</a>
+          <div className="mt-10">
+            <a href="/teklif-al" className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-red-800 text-lg font-semibold hover:bg-red-50 transition shadow-sm">Teklif Al</a>
+          </div>
+          <div className="mt-4 flex items-center justify-center gap-3">
             <a href="/services" className="inline-flex items-center rounded-lg bg-red-900/40 px-5 py-3 text-white font-medium hover:bg-red-900/60 transition">Ürünlerimiz</a>
-            <a href="/contact" className="inline-flex items-center rounded-lg border border-white/30 px-5 py-3 text-white font-medium hover:bg-white/10 transition">İletişim</a>
+            <a href="/about" className="inline-flex items-center rounded-lg border border-white/30 px-5 py-3 text-white font-medium hover:bg-white/10 transition">Hakkımızda</a>
           </div>
         </div>
       </section>
