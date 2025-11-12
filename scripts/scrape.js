@@ -84,14 +84,76 @@ function extractSections($) {
   return sections.slice(0, 12);
 }
 
+function classifyPage($, url, title) {
+  const u = url.toLowerCase();
+  const t = (title || '').toLowerCase();
+  const text = $('body').text().toLowerCase();
+  const has = (re) => re.test(u) || re.test(t) || re.test(text);
+  if (has(/ilet[iı]şim|contact|randevu/)) return 'contact';
+  if (has(/hakk[ıi]mda|hakk[ıi]m[ıi]zda|about|özgeçmiş|cv/)) return 'about';
+  if (has(/hizmet|tedavi|uygulama|services?/)) return 'services';
+  return 'page';
+}
+
+function extractAbout($) {
+  // Collect meaningful paragraphs from the main content area
+  const paras = [];
+  $('main p, .content p, .post-content p, .page-content p, article p, .entry-content p, .container p').each((_, p) => {
+    const txt = $(p).text().trim();
+    if (txt && txt.length > 80) paras.push(txt);
+  });
+  // De-duplicate
+  return Array.from(new Set(paras)).slice(0, 24);
+}
+
+function extractServices($, baseUrl) {
+  const services = [];
+  // Pattern A: cards or list items with links
+  $('a').each((_, a) => {
+    const href = $(a).attr('href');
+    let title = $(a).text().trim();
+    if (!href) return;
+    const abs = toAbsolute(href);
+    if (!abs.startsWith(BASE)) return;
+    // Keep only service-like anchors
+    const t = title.toLowerCase();
+    if (/hizmet|tedavi|uygulama|estetik|ameliyat|operation|treatment|service/.test(t)) {
+      services.push({ title: title || 'Service', link: abs });
+    }
+  });
+  // Pattern B: heading + paragraph blocks
+  $('h2, h3').each((_, h) => {
+    const title = $(h).text().trim();
+    if (!title) return;
+    const t = title.toLowerCase();
+    if (!/hizmet|tedavi|uygulama|estetik|ameliyat|operation|treatment|service/.test(t)) return;
+    // next sibling paragraphs
+    const p = $(h).nextAll('p').slice(0, 2).map((_, el) => $(el).text().trim()).get().filter(Boolean).join(' ');
+    services.push({ title, description: p });
+  });
+  // Clean and unique by title+link
+  const map = new Map();
+  for (const s of services) {
+    const key = (s.title || '') + '|' + (s.link || '');
+    if (!map.has(key)) map.set(key, s);
+  }
+  return Array.from(map.values()).slice(0, 24);
+}
+
 async function fetchPage(url) {
   const res = await axios.get(url, { timeout: 20000 });
   const html = res.data;
   const $ = cheerio.load(html);
   const title = $('title').text().trim();
   const description = $('meta[name="description"]').attr('content') || '';
+  const type = classifyPage($, url, title);
   const images = extractImages($);
   const contact = extractContact($);
+
+  let bio = undefined;
+  let services = undefined;
+  if (type === 'about') bio = extractAbout($);
+  if (type === 'services') services = extractServices($);
 
   const links = new Set();
   $('a[href]').each((_, a) => {
@@ -103,7 +165,7 @@ async function fetchPage(url) {
   });
 
   const sections = extractSections($);
-  return { url, title, description, images, contact, sections, links: Array.from(links) };
+  return { url, title, description, type, images, contact, bio, services, sections, links: Array.from(links) };
 }
 
 async function crawl(startUrl, limit = 8) {
@@ -117,7 +179,7 @@ async function crawl(startUrl, limit = 8) {
     visited.add(url);
     try {
       const page = await fetchPage(url);
-      pages.push({ url: page.url, title: page.title, description: page.description, images: page.images, sections: page.sections, contact: page.contact });
+      pages.push({ url: page.url, title: page.title, description: page.description, type: page.type, images: page.images, sections: page.sections, bio: page.bio, services: page.services, contact: page.contact });
       for (const l of page.links) {
         if (!visited.has(l) && l.startsWith(BASE)) queue.push(l);
       }
