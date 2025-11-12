@@ -8,7 +8,6 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-red-700 to-red-800 text-white">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\"><defs><pattern id=\"p\" width=\"40\" height=\"40\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"40\" height=\"40\" fill=\"none\"/><circle cx=\"0\" cy=\"0\" r=\"1\" fill=\"%23ffffff22\"/></pattern></defs><rect width=\"100%\" height=\"100%\" fill=\"url(%23p)\"/></svg>')] opacity-40"></div>
         <div className="relative max-w-6xl mx-auto px-4 py-24 text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">{home.hero.title}</h1>
           <div className="mt-6 space-y-1 text-lg md:text-xl font-medium">
