@@ -16,40 +16,65 @@ function toAbsolute(url) {
   return BASE + '/' + url;
 }
 
-function extractContact($) {
-  const contact = { phones: [], emails: [], addresses: [], socials: {} };
-  $('a[href^="tel:"]').each((_, a) => {
-    const href = $(a).attr('href');
+function cleanText(s) {
+  return (s || '')
+    .replace(/\s+/g, ' ')
+    .replace(/\u00A0/g, ' ')
+    .replace(/cookies?|kvkk|çerez/i, (m) => m.length > 1000 ? '' : m)
+    .trim();
+}
+
+function extractContact($, $root) {
+  const contact = { phones: [], emails: [], addresses: [], socials: {}, map: undefined };
+  const scope = $root && $root.length ? $root : $;
+
+  scope('a[href^="tel:"]').each((_, a) => {
+    const href = scope(a).attr('href');
     if (href) contact.phones.push(href.replace('tel:', '').trim());
   });
-  $('a[href^="mailto:"]').each((_, a) => {
-    const href = $(a).attr('href');
+  scope('a[href*="wa.me"], a[href*="whatsapp"]').each((_, a) => {
+    const href = scope(a).attr('href');
+    if (href) contact.socials.whatsapp = toAbsolute(href);
+  });
+  scope('a[href^="mailto:"]').each((_, a) => {
+    const href = scope(a).attr('href');
     if (href) contact.emails.push(href.replace('mailto:', '').trim());
   });
-  const text = $('body').text();
-  const addressCandidates = [];
-  $('address').each((_, el) => addressCandidates.push($(el).text().trim()));
-  // Heuristic: lines with city keywords
-  const lines = text.split('\n').map(s => s.trim()).filter(Boolean);
-  const cityRe = /(istanbul|ankara|izmir|sok|cad|mah|no\:|kat\:|bulvar|street|avenue)/i;
+
+  // Addresses: try address tags or blocks containing known words
+  const addrBlocks = [];
+  scope('address, .address, [class*="adres"], [class*="address"]').each((_, el) => addrBlocks.push(cleanText(scope(el).text())));
+  const bodyText = cleanText(scope('body').text()) || cleanText(scope.text());
+  const lines = (bodyText || '').split(/\n|\.|\u2022/).map(s => cleanText(s)).filter(Boolean);
+  const cityRe = /(istanbul|ankara|izmir|kad[ıi]k[öo]y|beşiktaş|üsküdar|mah\.|cad\.|sok\.|no\:|kat\:|bulvar|street|avenue|beykoz|ataşehir)/i;
   for (const line of lines) {
-    if (cityRe.test(line) && line.length > 10) addressCandidates.push(line);
+    if (cityRe.test(line) && line.length > 12) addrBlocks.push(line);
   }
-  contact.addresses = Array.from(new Set(addressCandidates)).slice(0, 5);
+  contact.addresses = Array.from(new Set(addrBlocks)).slice(0, 5);
 
   // Socials
-  $('a[href*="facebook.com"]').each((_, a) => contact.socials.facebook = $(a).attr('href'));
-  $('a[href*="instagram.com"]').each((_, a) => contact.socials.instagram = $(a).attr('href'));
-  $('a[href*="twitter.com"], a[href*="x.com"]').each((_, a) => contact.socials.twitter = $(a).attr('href'));
-  $('a[href*="linkedin.com"]').each((_, a) => contact.socials.linkedin = $(a).attr('href'));
+  scope('a[href*="facebook.com"]').each((_, a) => contact.socials.facebook = scope(a).attr('href'));
+  scope('a[href*="instagram.com"]').each((_, a) => contact.socials.instagram = scope(a).attr('href'));
+  scope('a[href*="twitter.com"], a[href*="x.com"]').each((_, a) => contact.socials.twitter = scope(a).attr('href'));
+  scope('a[href*="linkedin.com"]').each((_, a) => contact.socials.linkedin = scope(a).attr('href'));
+
+  // Map iframe
+  const mapSrc = scope('iframe[src*="google.com/maps"], iframe[src*="maps.google"]').attr('src');
+  if (mapSrc) contact.map = toAbsolute(mapSrc);
+
+  // Dedup phones/emails
+  contact.phones = Array.from(new Set(contact.phones));
+  contact.emails = Array.from(new Set(contact.emails));
+
   return contact;
 }
 
-function extractImages($) {
+function extractImages($, $root) {
+  const scope = $root && $root.length ? $root : $;
   const images = [];
-  $('img').each((_, img) => {
-    let src = $(img).attr('src') || $(img).attr('data-src');
-    const alt = $(img).attr('alt') || '';
+  scope('img').each((_, img) => {
+    let src = scope(img).attr('src') || scope(img).attr('data-src') || scope(img).attr('data-lazy-src');
+    const alt = scope(img).attr('alt') || '';
     if (!src) return;
     src = toAbsolute(src);
     images.push({ src, alt });
@@ -57,37 +82,10 @@ function extractImages($) {
   return images;
 }
 
-function extractSections($) {
-  const sections = [];
-  // Build sections from headings
-  const nodes = $('h1, h2, h3, p, li');
-  let current = null;
-  nodes.each((_, el) => {
-    const tag = el.tagName.toLowerCase();
-    const text = cheerio.load('<div></div>')(el).text().trim();
-    if (!text) return;
-    if (tag === 'h1' || tag === 'h2') {
-      if (current) sections.push(current);
-      current = { title: text, items: [] };
-    } else if (tag === 'h3') {
-      if (!current) current = { title: 'Section', items: [] };
-      current.items.push({ type: 'subheading', text });
-    } else if (tag === 'li') {
-      if (!current) current = { title: 'Section', items: [] };
-      current.items.push({ type: 'bullet', text });
-    } else if (tag === 'p') {
-      if (!current) current = { title: 'Section', items: [] };
-      current.items.push({ type: 'paragraph', text });
-    }
-  });
-  if (current) sections.push(current);
-  return sections.slice(0, 12);
-}
-
 function classifyPage($, url, title) {
-  const u = url.toLowerCase();
+  const u = (url || '').toLowerCase();
   const t = (title || '').toLowerCase();
-  const text = $('body').text().toLowerCase();
+  const text = ($('body').text() || '').toLowerCase();
   const has = (re) => re.test(u) || re.test(t) || re.test(text);
   if (has(/ilet[iı]şim|contact|randevu/)) return 'contact';
   if (has(/hakk[ıi]mda|hakk[ıi]m[ıi]zda|about|özgeçmiş|cv/)) return 'about';
@@ -95,65 +93,118 @@ function classifyPage($, url, title) {
   return 'page';
 }
 
-function extractAbout($) {
-  // Collect meaningful paragraphs from the main content area
-  const paras = [];
-  $('main p, .content p, .post-content p, .page-content p, article p, .entry-content p, .container p').each((_, p) => {
-    const txt = $(p).text().trim();
-    if (txt && txt.length > 80) paras.push(txt);
-  });
-  // De-duplicate
-  return Array.from(new Set(paras)).slice(0, 24);
+function getMainRoot($) {
+  const selectors = [
+    'main', '#main', '.site-main', '.entry-content', '.page-content', '.post-content', '.content', 'article', '.elementor', '.container', '.wp-block-group'
+  ];
+  for (const sel of selectors) {
+    const el = $(sel);
+    if (el && el.length) return el;
+  }
+  return $('body');
 }
 
-function extractServices($, baseUrl) {
-  const services = [];
-  // Pattern A: cards or list items with links
-  $('a').each((_, a) => {
-    const href = $(a).attr('href');
-    let title = $(a).text().trim();
-    if (!href) return;
-    const abs = toAbsolute(href);
-    if (!abs.startsWith(BASE)) return;
-    // Keep only service-like anchors
-    const t = title.toLowerCase();
-    if (/hizmet|tedavi|uygulama|estetik|ameliyat|operation|treatment|service/.test(t)) {
-      services.push({ title: title || 'Service', link: abs });
+function extractAbout($) {
+  const $root = getMainRoot($);
+  const paras = [];
+  $root.find('h1, h2, h3, p').each((_, el) => {
+    const tag = el.tagName?.toLowerCase?.() || '';
+    const text = cleanText($(el).text());
+    if (!text) return;
+    if (tag === 'p' && text.length > 60) paras.push(text);
+    if ((tag === 'h1' || tag === 'h2' || tag === 'h3') && /hakk|about|özgeçmiş|cv/i.test(text)) {
+      // include following 6 paragraphs
+      $(el).nextAll('p').slice(0, 6).each((_, p) => {
+        const t = cleanText($(p).text());
+        if (t.length > 40) paras.push(t);
+      });
     }
   });
-  // Pattern B: heading + paragraph blocks
-  $('h2, h3').each((_, h) => {
-    const title = $(h).text().trim();
+  return Array.from(new Set(paras)).slice(0, 40);
+}
+
+function extractServices($) {
+  const $root = getMainRoot($);
+  const services = [];
+
+  // A) Cards with headings and optional text
+  $root.find('.card, .service, .hizmet, .service-item, .et_pb_blurb, .elementor-widget, .wp-block-columns .wp-block-column').each((_, block) => {
+    const title = cleanText($(block).find('h2, h3, h4, .title, .card-title, .elementor-heading-title').first().text());
+    const description = cleanText($(block).find('p').first().text());
+    let link = $(block).find('a').first().attr('href');
     if (!title) return;
-    const t = title.toLowerCase();
-    if (!/hizmet|tedavi|uygulama|estetik|ameliyat|operation|treatment|service/.test(t)) return;
-    // next sibling paragraphs
-    const p = $(h).nextAll('p').slice(0, 2).map((_, el) => $(el).text().trim()).get().filter(Boolean).join(' ');
-    services.push({ title, description: p });
+    const low = title.toLowerCase();
+    if (!/hizmet|tedavi|uygulama|estetik|ameliyat|operation|treatment|service/.test(low) && description.length < 20) return;
+    if (link) link = toAbsolute(link);
+    services.push({ title, description, link });
   });
-  // Clean and unique by title+link
+
+  // B) Lists with anchors that look like services
+  $root.find('ul li a').each((_, a) => {
+    const title = cleanText($(a).text());
+    let link = $(a).attr('href');
+    if (!title || title.length < 3) return;
+    const low = title.toLowerCase();
+    if (!/hizmet|tedavi|uygulama|estetik|ameliyat|operation|treatment|service/.test(low)) return;
+    if (link) link = toAbsolute(link);
+    services.push({ title, link });
+  });
+
+  // Unique
   const map = new Map();
   for (const s of services) {
     const key = (s.title || '') + '|' + (s.link || '');
     if (!map.has(key)) map.set(key, s);
   }
-  return Array.from(map.values()).slice(0, 24);
+  const res = Array.from(map.values()).filter(s => s.title && s.title.length > 2);
+  return res.slice(0, 36);
+}
+
+function extractContactSection($) {
+  const $root = getMainRoot($);
+  const contact = extractContact($, $root);
+  return contact;
+}
+
+function extractSections($) {
+  const $root = getMainRoot($);
+  const sections = [];
+  let current = null;
+  $root.find('h1, h2, h3, p, li').each((_, el) => {
+    const tag = el.tagName?.toLowerCase?.() || '';
+    const text = cleanText($(el).text());
+    if (!text) return;
+    if (tag === 'h1' || tag === 'h2') {
+      if (current) sections.push(current);
+      current = { title: text, items: [] };
+    } else if (tag === 'h3') {
+      if (!current) current = { title: 'Bölüm', items: [] };
+      current.items.push({ type: 'subheading', text });
+    } else if (tag === 'li') {
+      if (!current) current = { title: 'Bölüm', items: [] };
+      current.items.push({ type: 'bullet', text });
+    } else if (tag === 'p') {
+      if (!current) current = { title: 'Bölüm', items: [] };
+      current.items.push({ type: 'paragraph', text });
+    }
+  });
+  if (current) sections.push(current);
+  return sections.slice(0, 12);
 }
 
 async function fetchPage(url) {
-  const res = await axios.get(url, { timeout: 20000 });
+  const res = await axios.get(url, { timeout: 25000, headers: { 'User-Agent': 'Mozilla/5.0 (Scraper Bot)' } });
   const html = res.data;
   const $ = cheerio.load(html);
-  const title = $('title').text().trim();
+  const title = cleanText($('title').text());
   const description = $('meta[name="description"]').attr('content') || '';
   const type = classifyPage($, url, title);
   const images = extractImages($);
-  const contact = extractContact($);
 
-  let bio = undefined;
-  let services = undefined;
+  let bio, services, contact;
   if (type === 'about') bio = extractAbout($);
   if (type === 'services') services = extractServices($);
+  if (type === 'contact' || type === 'page') contact = extractContactSection($);
 
   const links = new Set();
   $('a[href]').each((_, a) => {
@@ -168,7 +219,7 @@ async function fetchPage(url) {
   return { url, title, description, type, images, contact, bio, services, sections, links: Array.from(links) };
 }
 
-async function crawl(startUrl, limit = 8) {
+async function crawl(startUrl, limit = 10) {
   const visited = new Set();
   const queue = [startUrl];
   const pages = [];
@@ -179,7 +230,17 @@ async function crawl(startUrl, limit = 8) {
     visited.add(url);
     try {
       const page = await fetchPage(url);
-      pages.push({ url: page.url, title: page.title, description: page.description, type: page.type, images: page.images, sections: page.sections, bio: page.bio, services: page.services, contact: page.contact });
+      pages.push({
+        url: page.url,
+        title: page.title,
+        description: page.description,
+        type: page.type,
+        images: page.images,
+        sections: page.sections,
+        bio: page.bio,
+        services: page.services,
+        contact: page.contact,
+      });
       for (const l of page.links) {
         if (!visited.has(l) && l.startsWith(BASE)) queue.push(l);
       }
@@ -191,7 +252,7 @@ async function crawl(startUrl, limit = 8) {
 }
 
 async function main() {
-  const pages = await crawl(BASE, 10);
+  const pages = await crawl(BASE, 12);
   const site = { scrapedAt: new Date().toISOString(), baseUrl: BASE, pages };
   if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR);
   fs.writeFileSync(OUT_FILE, JSON.stringify(site, null, 2), 'utf8');

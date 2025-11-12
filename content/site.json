@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2025-11-12T12:50:14.376Z",
+  "scrapedAt": "2025-11-12T13:05:49.623Z",
   "baseUrl": "https://www.abdulkadiraltinel.com.tr",
   "pages": [
     {
@@ -55,7 +55,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -63,7 +63,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -79,7 +79,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -126,18 +126,6 @@
               "text": "İLETİŞİM"
             },
             {
-              "type": "bullet",
-              "text": "1995'DEN BERİ...\n                        iyi günde kötü günde\n                        A kalite sigortacılık hep yanınızda.\n                        TEKLİF AL"
-            },
-            {
-              "type": "bullet",
-              "text": "1995'DEN BERİ...\n                        iyi günde kötü günde\n                        A kalite sigortacılık hep yanınızda.\n                        TEKLİF AL"
-            },
-            {
-              "type": "bullet",
-              "text": "1995'DEN BERİ...\n                        iyi günde kötü günde\n                        A kalite sigortacılık hep yanınızda.\n                        TEKLİF AL"
-            },
-            {
               "type": "subheading",
               "text": "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd. Şti 1995'den beri her zaman müşteri odaklı çözümleri hedefler."
             },
@@ -181,24 +169,12 @@
         }
       ],
       "bio": [
+        "Yasal zorunluluk olan Trafik Sigortası ile, trafikte güvence altındasınız!",
         "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir.",
         "Çeşitli etkenlerden ötürü sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigorta, Özel Sağlık Sigortası olarak adlandırılır.",
-        "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/",
@@ -253,7 +229,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -261,7 +237,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -277,7 +253,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -324,18 +300,6 @@
               "text": "İLETİŞİM"
             },
             {
-              "type": "bullet",
-              "text": "1995'DEN BERİ...\n                        iyi günde kötü günde\n                        A kalite sigortacılık hep yanınızda.\n                        TEKLİF AL"
-            },
-            {
-              "type": "bullet",
-              "text": "1995'DEN BERİ...\n                        iyi günde kötü günde\n                        A kalite sigortacılık hep yanınızda.\n                        TEKLİF AL"
-            },
-            {
-              "type": "bullet",
-              "text": "1995'DEN BERİ...\n                        iyi günde kötü günde\n                        A kalite sigortacılık hep yanınızda.\n                        TEKLİF AL"
-            },
-            {
               "type": "subheading",
               "text": "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd. Şti 1995'den beri her zaman müşteri odaklı çözümleri hedefler."
             },
@@ -379,24 +343,12 @@
         }
       ],
       "bio": [
+        "Yasal zorunluluk olan Trafik Sigortası ile, trafikte güvence altındasınız!",
         "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir.",
         "Çeşitli etkenlerden ötürü sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigorta, Özel Sağlık Sigortası olarak adlandırılır.",
-        "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/Hakkimizda",
@@ -419,7 +371,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -427,7 +379,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -443,7 +395,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -518,23 +470,9 @@
         }
       ],
       "bio": [
-        "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd.Şti, merkezi, Şişli, Mecidiyeköy, Şehit Ahmet Sokak, Mecidiyeköy İş Merkezi, No 4/61’de bulunan, 5684 sayılı acenteler yasası gereğince, minimum sermayesini 25.000 TL olarak İstanbul Ticaret Odasın’ a tescil ettirilmiş, 1999 yılında Abdülkadir Altınel tarafından kurulmuştur."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd.Şti, merkezi, Şişli, Mecidiyeköy, Şehit Ahmet Sokak, Mecidiyeköy İş Merkezi, No 4/61’de bulunan, 5684 sayılı acenteler yasası gereğince, minimum sermayesini 25.000 TL olarak İstanbul Ticaret Odasın’ a tescil ettirilmiş, 1999 yılında Abdülkadir Altınel tarafından kurulmuştur.",
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd.Şti, merkezi, Şişli, Mecidiyeköy, Şehit Ahmet Sokak, Mecidiyeköy İş Merkezi, No 4/61’de bulunan, 5684 sayılı acenteler yasası gereğince, minimum sermayesini 25.000 TL olarak İstanbul Ticaret Odasın’ a tescil ettirilmiş, 1999 yılında Abdülkadir Altınel tarafından kurulmuştur.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/Tarihce",
@@ -557,7 +495,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -565,7 +503,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -581,7 +519,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -646,11 +584,11 @@
             },
             {
               "type": "paragraph",
-              "text": "Kurucu Abdülkadir Altınel (1969), Ocak 1995 te Avrupa Amerika Holding e bağlı Emek Hayat Sigorta A.Ş.nin direkt satış ofisinde müşteri temsilcisi olarak sigorta sektörüne girmiştir.(Mart 1996)\n                        Nisan 1996 da satış şefi görevinden istifa ederek Emir Sigorta Acenteliği’nde satış müdürlüğü yapmaya başlamıştır.(Aralık 1997)\n                        Ocak 1998 de Yeşilköy Aracılık Hizmetleri Ltd. Şti kurucu ortağı olarak, Emek Hayat Sigorta ve Kapital Sigorta acentelikleri yapmak suretiyle, aracılık faaliyetlerine hissedar sıfatıyla devam etmiştir.(Mayıs 1999)"
+              "text": "Kurucu Abdülkadir Altınel (1969), Ocak 1995 te Avrupa Amerika Holding e bağlı Emek Hayat Sigorta A.Ş.nin direkt satış ofisinde müşteri temsilcisi olarak sigorta sektörüne girmiştir.(Mart 1996) Nisan 1996 da satış şefi görevinden istifa ederek Emir Sigorta Acenteliği’nde satış müdürlüğü yapmaya başlamıştır.(Aralık 1997) Ocak 1998 de Yeşilköy Aracılık Hizmetleri Ltd. Şti kurucu ortağı olarak, Emek Hayat Sigorta ve Kapital Sigorta acentelikleri yapmak suretiyle, aracılık faaliyetlerine hissedar sıfatıyla devam etmiştir.(Mayıs 1999)"
             },
             {
               "type": "paragraph",
-              "text": "Aralık 1999 da Altınel Sigorta Aracılık Hizmetleri - Abdülkadir Altınel(şahıs firması) firmasını kurmuş, Koç Allianz ile münhasır acentelik sözleşmesi imzalamış, birkaç ay içersinde Koç Allianz Hayat Sigorta acenteliği ile ürün gamını genişletmiştir.\n                        Mart 2009’da çoklu acentelik yaparak müşterilerine daha geniş bir ürün yelpazesi sunmak amacıyla, Allianz Sigorta ile yaptığı sözleşmeye son vermiş, Axa Sigorta ve Axa Hayat Sigorta ile acentelik tesis etmiştir.\n                        Eylül 2009 da Ergo İsviçre Sigorta (2010), Kasım 2009 da HDI Sigorta, Haziran 2010 da Ray Sigorta(2013), Ocak 2013 de Liberty Sigorta, Ağustos 2013 de Mapfre Genel Sigorta, Unico Sigorta, Ak Sigorta ile işbirliği kurmuştur.\n                        Bugün, 6 sigorta şirketi temsilciliğine devam etmektedir.\n                        \n                        Aralık 2014 itibariyle şahıs şirketini, ticaret sicil numarasını değiştirmeyerek, yeni bir hissedar olmaksızın limited şirkete çevirmiştir.\n                        Yeni ticari ünvan; Abdülkadir Altınel Sigorta Aracılık Hizmetleri Limited Şirketi dir\n                        25.12 2020 eklemesi : Bugün,\n                        * Ak Sigorta,\n                        * Allianz Sigorta\n                        * Axa Sigota, Axa Hayat ve Emeklilik,\n                        * Corpus Sigorta,\n                        * HDI Sigorta,\n                        * Mapfre Sigorta, Mapfre Yaşam Sigorta,\n                 \n                        acentelikleri ile yola devam ediyoruz. 15.08.2022"
+              "text": "Aralık 1999 da Altınel Sigorta Aracılık Hizmetleri - Abdülkadir Altınel(şahıs firması) firmasını kurmuş, Koç Allianz ile münhasır acentelik sözleşmesi imzalamış, birkaç ay içersinde Koç Allianz Hayat Sigorta acenteliği ile ürün gamını genişletmiştir. Mart 2009’da çoklu acentelik yaparak müşterilerine daha geniş bir ürün yelpazesi sunmak amacıyla, Allianz Sigorta ile yaptığı sözleşmeye son vermiş, Axa Sigorta ve Axa Hayat Sigorta ile acentelik tesis etmiştir. Eylül 2009 da Ergo İsviçre Sigorta (2010), Kasım 2009 da HDI Sigorta, Haziran 2010 da Ray Sigorta(2013), Ocak 2013 de Liberty Sigorta, Ağustos 2013 de Mapfre Genel Sigorta, Unico Sigorta, Ak Sigorta ile işbirliği kurmuştur. Bugün, 6 sigorta şirketi temsilciliğine devam etmektedir. Aralık 2014 itibariyle şahıs şirketini, ticaret sicil numarasını değiştirmeyerek, yeni bir hissedar olmaksızın limited şirkete çevirmiştir. Yeni ticari ünvan; Abdülkadir Altınel Sigorta Aracılık Hizmetleri Limited Şirketi dir 25.12 2020 eklemesi : Bugün, * Ak Sigorta, * Allianz Sigorta * Axa Sigota, Axa Hayat ve Emeklilik, * Corpus Sigorta, * HDI Sigorta, * Mapfre Sigorta, Mapfre Yaşam Sigorta, acentelikleri ile yola devam ediyoruz. 15.08.2022"
             },
             {
               "type": "paragraph",
@@ -660,23 +598,10 @@
         }
       ],
       "bio": [
-        "Kurucu Abdülkadir Altınel (1969), Ocak 1995 te Avrupa Amerika Holding e bağlı Emek Hayat Sigorta A.Ş.nin direkt satış ofisinde müşteri temsilcisi olarak sigorta sektörüne girmiştir.(Mart 1996)\n                        Nisan 1996 da satış şefi görevinden istifa ederek Emir Sigorta Acenteliği’nde satış müdürlüğü yapmaya başlamıştır.(Aralık 1997)\n                        Ocak 1998 de Yeşilköy Aracılık Hizmetleri Ltd. Şti kurucu ortağı olarak, Emek Hayat Sigorta ve Kapital Sigorta acentelikleri yapmak suretiyle, aracılık faaliyetlerine hissedar sıfatıyla devam etmiştir.(Mayıs 1999)",
-        "Aralık 1999 da Altınel Sigorta Aracılık Hizmetleri - Abdülkadir Altınel(şahıs firması) firmasını kurmuş, Koç Allianz ile münhasır acentelik sözleşmesi imzalamış, birkaç ay içersinde Koç Allianz Hayat Sigorta acenteliği ile ürün gamını genişletmiştir.\n                        Mart 2009’da çoklu acentelik yaparak müşterilerine daha geniş bir ürün yelpazesi sunmak amacıyla, Allianz Sigorta ile yaptığı sözleşmeye son vermiş, Axa Sigorta ve Axa Hayat Sigorta ile acentelik tesis etmiştir.\n                        Eylül 2009 da Ergo İsviçre Sigorta (2010), Kasım 2009 da HDI Sigorta, Haziran 2010 da Ray Sigorta(2013), Ocak 2013 de Liberty Sigorta, Ağustos 2013 de Mapfre Genel Sigorta, Unico Sigorta, Ak Sigorta ile işbirliği kurmuştur.\n                        Bugün, 6 sigorta şirketi temsilciliğine devam etmektedir.\n                        \n                        Aralık 2014 itibariyle şahıs şirketini, ticaret sicil numarasını değiştirmeyerek, yeni bir hissedar olmaksızın limited şirkete çevirmiştir.\n                        Yeni ticari ünvan; Abdülkadir Altınel Sigorta Aracılık Hizmetleri Limited Şirketi dir\n                        25.12 2020 eklemesi : Bugün,\n                        * Ak Sigorta,\n                        * Allianz Sigorta\n                        * Axa Sigota, Axa Hayat ve Emeklilik,\n                        * Corpus Sigorta,\n                        * HDI Sigorta,\n                        * Mapfre Sigorta, Mapfre Yaşam Sigorta,\n                 \n                        acentelikleri ile yola devam ediyoruz. 15.08.2022"
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Kurucu Abdülkadir Altınel (1969), Ocak 1995 te Avrupa Amerika Holding e bağlı Emek Hayat Sigorta A.Ş.nin direkt satış ofisinde müşteri temsilcisi olarak sigorta sektörüne girmiştir.(Mart 1996) Nisan 1996 da satış şefi görevinden istifa ederek Emir Sigorta Acenteliği’nde satış müdürlüğü yapmaya başlamıştır.(Aralık 1997) Ocak 1998 de Yeşilköy Aracılık Hizmetleri Ltd. Şti kurucu ortağı olarak, Emek Hayat Sigorta ve Kapital Sigorta acentelikleri yapmak suretiyle, aracılık faaliyetlerine hissedar sıfatıyla devam etmiştir.(Mayıs 1999)",
+        "Aralık 1999 da Altınel Sigorta Aracılık Hizmetleri - Abdülkadir Altınel(şahıs firması) firmasını kurmuş, Koç Allianz ile münhasır acentelik sözleşmesi imzalamış, birkaç ay içersinde Koç Allianz Hayat Sigorta acenteliği ile ürün gamını genişletmiştir. Mart 2009’da çoklu acentelik yaparak müşterilerine daha geniş bir ürün yelpazesi sunmak amacıyla, Allianz Sigorta ile yaptığı sözleşmeye son vermiş, Axa Sigorta ve Axa Hayat Sigorta ile acentelik tesis etmiştir. Eylül 2009 da Ergo İsviçre Sigorta (2010), Kasım 2009 da HDI Sigorta, Haziran 2010 da Ray Sigorta(2013), Ocak 2013 de Liberty Sigorta, Ağustos 2013 de Mapfre Genel Sigorta, Unico Sigorta, Ak Sigorta ile işbirliği kurmuştur. Bugün, 6 sigorta şirketi temsilciliğine devam etmektedir. Aralık 2014 itibariyle şahıs şirketini, ticaret sicil numarasını değiştirmeyerek, yeni bir hissedar olmaksızın limited şirkete çevirmiştir. Yeni ticari ünvan; Abdülkadir Altınel Sigorta Aracılık Hizmetleri Limited Şirketi dir 25.12 2020 eklemesi : Bugün, * Ak Sigorta, * Allianz Sigorta * Axa Sigota, Axa Hayat ve Emeklilik, * Corpus Sigorta, * HDI Sigorta, * Mapfre Sigorta, Mapfre Yaşam Sigorta, acentelikleri ile yola devam ediyoruz. 15.08.2022",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/Amacimiz",
@@ -699,7 +624,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -707,7 +632,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -723,7 +648,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -788,7 +713,7 @@
             },
             {
               "type": "paragraph",
-              "text": "“ Zamanında ve eksiksiz risk değerlendirmesi yaparak sigortalılarımızla uzun süreli işbirliğini sağlamak ”,\n\n                        \n                        “ Sunduğumuz poliçeler ile piyasa şartlarında rekabetçi olabilmek ”,\n                        \n\n                        “ Teminatlar kapsamındaki zararların hızlı ve tam olarak karşılanması sağlamak ”,\n                        \n\n                        “ Tüm hizmetlerimizle müşteri memnuniyeti maksimize etmektir ”."
+              "text": "“ Zamanında ve eksiksiz risk değerlendirmesi yaparak sigortalılarımızla uzun süreli işbirliğini sağlamak ”, “ Sunduğumuz poliçeler ile piyasa şartlarında rekabetçi olabilmek ”, “ Teminatlar kapsamındaki zararların hızlı ve tam olarak karşılanması sağlamak ”, “ Tüm hizmetlerimizle müşteri memnuniyeti maksimize etmektir ”."
             },
             {
               "type": "paragraph",
@@ -798,22 +723,9 @@
         }
       ],
       "bio": [
-        "“ Zamanında ve eksiksiz risk değerlendirmesi yaparak sigortalılarımızla uzun süreli işbirliğini sağlamak ”,\n\n                        \n                        “ Sunduğumuz poliçeler ile piyasa şartlarında rekabetçi olabilmek ”,\n                        \n\n                        “ Teminatlar kapsamındaki zararların hızlı ve tam olarak karşılanması sağlamak ”,\n                        \n\n                        “ Tüm hizmetlerimizle müşteri memnuniyeti maksimize etmektir ”."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "“ Zamanında ve eksiksiz risk değerlendirmesi yaparak sigortalılarımızla uzun süreli işbirliğini sağlamak ”, “ Sunduğumuz poliçeler ile piyasa şartlarında rekabetçi olabilmek ”, “ Teminatlar kapsamındaki zararların hızlı ve tam olarak karşılanması sağlamak ”, “ Tüm hizmetlerimizle müşteri memnuniyeti maksimize etmektir ”.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/IsYeri",
@@ -836,7 +748,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -844,7 +756,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -860,7 +772,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -909,7 +821,7 @@
           ]
         },
         {
-          "title": "İş Yeri  Sigortası",
+          "title": "İş Yeri Sigortası",
           "items": [
             {
               "type": "bullet",
@@ -917,15 +829,15 @@
             },
             {
               "type": "bullet",
-              "text": "İş Yeri  Sigortası"
+              "text": "İş Yeri Sigortası"
             },
             {
               "type": "subheading",
-              "text": "İş Yeri  Sigortası"
+              "text": "İş Yeri Sigortası"
             },
             {
               "type": "paragraph",
-              "text": "Bir iş yeri açmaya karar vermek, sürdürmek ve hatta büyütmek bir birey yetiştirmek kadar zorlu bir süreç.\n                        \n                        Siz tüm enerjinizi işyerinizi ayakta tutmak için verirken, biz de aklınıza bile gelmeyecek risklere karşı koruma sağlıyoruz!\n                        \n                        İşyeri Sigortası ile, işyerinizi ve isteğe bağlı olarak işyerindeki muhteviyatınızı yangın, hırsızlık,  sel  ve su baskınından; iş durması ve kira kaybına kadar birçok riske karşı güvence altına alabilirsiniz.\n\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
+              "text": "Bir iş yeri açmaya karar vermek, sürdürmek ve hatta büyütmek bir birey yetiştirmek kadar zorlu bir süreç. Siz tüm enerjinizi işyerinizi ayakta tutmak için verirken, biz de aklınıza bile gelmeyecek risklere karşı koruma sağlıyoruz! İşyeri Sigortası ile, işyerinizi ve isteğe bağlı olarak işyerindeki muhteviyatınızı yangın, hırsızlık, sel ve su baskınından; iş durması ve kira kaybına kadar birçok riske karşı güvence altına alabilirsiniz. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz."
             },
             {
               "type": "paragraph",
@@ -935,22 +847,9 @@
         }
       ],
       "bio": [
-        "Bir iş yeri açmaya karar vermek, sürdürmek ve hatta büyütmek bir birey yetiştirmek kadar zorlu bir süreç.\n                        \n                        Siz tüm enerjinizi işyerinizi ayakta tutmak için verirken, biz de aklınıza bile gelmeyecek risklere karşı koruma sağlıyoruz!\n                        \n                        İşyeri Sigortası ile, işyerinizi ve isteğe bağlı olarak işyerindeki muhteviyatınızı yangın, hırsızlık,  sel  ve su baskınından; iş durması ve kira kaybına kadar birçok riske karşı güvence altına alabilirsiniz.\n\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Bir iş yeri açmaya karar vermek, sürdürmek ve hatta büyütmek bir birey yetiştirmek kadar zorlu bir süreç. Siz tüm enerjinizi işyerinizi ayakta tutmak için verirken, biz de aklınıza bile gelmeyecek risklere karşı koruma sağlıyoruz! İşyeri Sigortası ile, işyerinizi ve isteğe bağlı olarak işyerindeki muhteviyatınızı yangın, hırsızlık, sel ve su baskınından; iş durması ve kira kaybına kadar birçok riske karşı güvence altına alabilirsiniz. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/ZorunluTrafik",
@@ -973,7 +872,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -981,7 +880,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -997,7 +896,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -1062,7 +961,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Yasal zorunluluk olan Trafik Sigortası ile, trafikte güvence altındasınız!\n                        Zorunlu Trafik Sigortası, devlet tarafından bütün motorlu araç sahiplerine yapılması zorunlu tutulmuş olan ve kaza sonucunda diğer araç veya üçüncü şahıslara verebileceğiniz zararlar için sizi güvence altına alan bir sigorta ürünüdür.\n                        Trafik sigortası ödeme işleminizi kredi kartıyla yapabilirsiniz.\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
+              "text": "Yasal zorunluluk olan Trafik Sigortası ile, trafikte güvence altındasınız! Zorunlu Trafik Sigortası, devlet tarafından bütün motorlu araç sahiplerine yapılması zorunlu tutulmuş olan ve kaza sonucunda diğer araç veya üçüncü şahıslara verebileceğiniz zararlar için sizi güvence altına alan bir sigorta ürünüdür. Trafik sigortası ödeme işleminizi kredi kartıyla yapabilirsiniz. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz."
             },
             {
               "type": "paragraph",
@@ -1072,22 +971,9 @@
         }
       ],
       "bio": [
-        "Yasal zorunluluk olan Trafik Sigortası ile, trafikte güvence altındasınız!\n                        Zorunlu Trafik Sigortası, devlet tarafından bütün motorlu araç sahiplerine yapılması zorunlu tutulmuş olan ve kaza sonucunda diğer araç veya üçüncü şahıslara verebileceğiniz zararlar için sizi güvence altına alan bir sigorta ürünüdür.\n                        Trafik sigortası ödeme işleminizi kredi kartıyla yapabilirsiniz.\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Yasal zorunluluk olan Trafik Sigortası ile, trafikte güvence altındasınız! Zorunlu Trafik Sigortası, devlet tarafından bütün motorlu araç sahiplerine yapılması zorunlu tutulmuş olan ve kaza sonucunda diğer araç veya üçüncü şahıslara verebileceğiniz zararlar için sizi güvence altına alan bir sigorta ürünüdür. Trafik sigortası ödeme işleminizi kredi kartıyla yapabilirsiniz. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/Kasko",
@@ -1110,7 +996,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -1118,7 +1004,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -1134,7 +1020,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -1199,7 +1085,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir.\n                        Kasko sigortası ile yaşanabilecek hasarlar sonrasında hayatınıza kaldığınız yerden devam edin…\n                   \n\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
+              "text": "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir. Kasko sigortası ile yaşanabilecek hasarlar sonrasında hayatınıza kaldığınız yerden devam edin… Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz."
             },
             {
               "type": "paragraph",
@@ -1209,22 +1095,9 @@
         }
       ],
       "bio": [
-        "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir.\n                        Kasko sigortası ile yaşanabilecek hasarlar sonrasında hayatınıza kaldığınız yerden devam edin…\n                   \n\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir. Kasko sigortası ile yaşanabilecek hasarlar sonrasında hayatınıza kaldığınız yerden devam edin… Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/OzelSaglik",
@@ -1247,7 +1120,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -1255,7 +1128,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -1271,7 +1144,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -1320,7 +1193,7 @@
           ]
         },
         {
-          "title": "Özel Sağlık  Sigortası",
+          "title": "Özel Sağlık Sigortası",
           "items": [
             {
               "type": "bullet",
@@ -1328,15 +1201,15 @@
             },
             {
               "type": "bullet",
-              "text": "Özel Sağlık  Sigortası"
+              "text": "Özel Sağlık Sigortası"
             },
             {
               "type": "subheading",
-              "text": "Özel Sağlık  Sigortası"
+              "text": "Özel Sağlık Sigortası"
             },
             {
               "type": "paragraph",
-              "text": "Çeşitli etkenlerden ötürü sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigorta, Özel Sağlık Sigortası olarak adlandırılır.\n                        Özel Sağlık Sigortası ile anlaşmalı olduğumuz A + hastaneler dahil olmak üzere, tüm özel hastanelerden yararlanabilir, aynı zamanda seçtiğiniz modüler plan ve sunduğumuz cazip avantajlardan faydalanabilirsiniz. Aşağıda yer alan teminatları ihtiyacınıza göre ekleyip, çıkarabilirsiniz.\n                        \n                        Yatarak Tedavi Teminatı\n                        Ayakta Tedavi Teminatı\n                        Check Up\n                        Mamografi Kontrolü\n                        PSA Kontrolü\n                        Kolonoskopi\n\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
+              "text": "Çeşitli etkenlerden ötürü sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigorta, Özel Sağlık Sigortası olarak adlandırılır. Özel Sağlık Sigortası ile anlaşmalı olduğumuz A + hastaneler dahil olmak üzere, tüm özel hastanelerden yararlanabilir, aynı zamanda seçtiğiniz modüler plan ve sunduğumuz cazip avantajlardan faydalanabilirsiniz. Aşağıda yer alan teminatları ihtiyacınıza göre ekleyip, çıkarabilirsiniz. Yatarak Tedavi Teminatı Ayakta Tedavi Teminatı Check Up Mamografi Kontrolü PSA Kontrolü Kolonoskopi Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz."
             },
             {
               "type": "paragraph",
@@ -1346,22 +1219,9 @@
         }
       ],
       "bio": [
-        "Çeşitli etkenlerden ötürü sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigorta, Özel Sağlık Sigortası olarak adlandırılır.\n                        Özel Sağlık Sigortası ile anlaşmalı olduğumuz A + hastaneler dahil olmak üzere, tüm özel hastanelerden yararlanabilir, aynı zamanda seçtiğiniz modüler plan ve sunduğumuz cazip avantajlardan faydalanabilirsiniz. Aşağıda yer alan teminatları ihtiyacınıza göre ekleyip, çıkarabilirsiniz.\n                        \n                        Yatarak Tedavi Teminatı\n                        Ayakta Tedavi Teminatı\n                        Check Up\n                        Mamografi Kontrolü\n                        PSA Kontrolü\n                        Kolonoskopi\n\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
-        }
-      }
+        "Çeşitli etkenlerden ötürü sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigorta, Özel Sağlık Sigortası olarak adlandırılır. Özel Sağlık Sigortası ile anlaşmalı olduğumuz A + hastaneler dahil olmak üzere, tüm özel hastanelerden yararlanabilir, aynı zamanda seçtiğiniz modüler plan ve sunduğumuz cazip avantajlardan faydalanabilirsiniz. Aşağıda yer alan teminatları ihtiyacınıza göre ekleyip, çıkarabilirsiniz. Yatarak Tedavi Teminatı Ayakta Tedavi Teminatı Check Up Mamografi Kontrolü PSA Kontrolü Kolonoskopi Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     },
     {
       "url": "https://www.abdulkadiraltinel.com.tr/Home/TamamlayiciSaglik",
@@ -1384,7 +1244,7 @@
       ],
       "sections": [
         {
-          "title": "Section",
+          "title": "Bölüm",
           "items": [
             {
               "type": "bullet",
@@ -1392,7 +1252,7 @@
             },
             {
               "type": "bullet",
-              "text": "KURUMSAL\n                                    \n\n\n\n\n\n\n                                        \n                                            HAKKIMIZDA\n                                        \n\n                                        \n                                            TARİHÇE\n                                        \n                                        \n                                            AMACIMIZ"
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
             },
             {
               "type": "bullet",
@@ -1408,7 +1268,7 @@
             },
             {
               "type": "bullet",
-              "text": "ÜRÜNLERİMİZ\n                                    \n\n                                        \n                                            İŞ YERİ SİGORTASI\n                                        \n                                        \n                                            ZORUNLU TRAFİK SİGORTASI\n                                        \n\n                                        \n                                            KASKO SİGORTASI \n                                        \n\n                                        \n                                            ÖZEL SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            TAMAMLAYICI SAĞLIK SİGORTASI \n                                        \n\n                                        \n                                            KONUT SİGORTASI \n                                        \n                                        \n                                            DASK (ZORUNLU DEPREM SİGORTASI) \n                                        \n                                        \n                                            SEYAHAT SAĞLIK SİGORTASI \n                                        \n                                        \n                                            PATİ SİGORTASI \n                                        \n                                        \n                                            TEKNE SİGORTASI"
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
             },
             {
               "type": "bullet",
@@ -1457,7 +1317,7 @@
           ]
         },
         {
-          "title": "Tamamlayıcı Sağlık  Sigortası",
+          "title": "Tamamlayıcı Sağlık Sigortası",
           "items": [
             {
               "type": "bullet",
@@ -1465,19 +1325,19 @@
             },
             {
               "type": "bullet",
-              "text": "Tamamlayıcı Sağlık  Sigortası"
+              "text": "Tamamlayıcı Sağlık Sigortası"
             },
             {
               "type": "subheading",
-              "text": "Tamamlayıcı Sağlık  Sigortası"
+              "text": "Tamamlayıcı Sağlık Sigortası"
             },
             {
               "type": "paragraph",
-              "text": "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz.\n                        Tamamlayıcı sağlık sigortası yaptırabilmek için SGK’lı olmanız yeterlidir.\n                        İhtiyacınıza uygun olan planı seçerek poliçenizi düzenleyebilirsiniz."
+              "text": "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz. Tamamlayıcı sağlık sigortası yaptırabilmek için SGK’lı olmanız yeterlidir. İhtiyacınıza uygun olan planı seçerek poliçenizi düzenleyebilirsiniz."
             },
             {
               "type": "paragraph",
-              "text": "Plan 1: Yatarak Tedavi Teminatından tüm anlaşmalı sağlık kuruluşlarında limitsiz olarak yararlanabilirsiniz.\n                        Plan 2: Yatarak Tedavi teminatından limitsiz olarak, Ayakta Tedavi teminatından da yılda 10 kere olmak üzere anlaşmalı olduğumuz tüm sağlık kuruluşlarında yararlanabilirsiniz.\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
+              "text": "Plan 1: Yatarak Tedavi Teminatından tüm anlaşmalı sağlık kuruluşlarında limitsiz olarak yararlanabilirsiniz. Plan 2: Yatarak Tedavi teminatından limitsiz olarak, Ayakta Tedavi teminatından da yılda 10 kere olmak üzere anlaşmalı olduğumuz tüm sağlık kuruluşlarında yararlanabilirsiniz. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz."
             },
             {
               "type": "paragraph",
@@ -1487,23 +1347,258 @@
         }
       ],
       "bio": [
-        "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz.\n                        Tamamlayıcı sağlık sigortası yaptırabilmek için SGK’lı olmanız yeterlidir.\n                        İhtiyacınıza uygun olan planı seçerek poliçenizi düzenleyebilirsiniz.",
-        "Plan 1: Yatarak Tedavi Teminatından tüm anlaşmalı sağlık kuruluşlarında limitsiz olarak yararlanabilirsiniz.\n                        Plan 2: Yatarak Tedavi teminatından limitsiz olarak, Ayakta Tedavi teminatından da yılda 10 kere olmak üzere anlaşmalı olduğumuz tüm sağlık kuruluşlarında yararlanabilirsiniz.\n\n                        \n                        Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657  numaralı telefonları arayabilirsiniz."
-      ],
-      "contact": {
-        "phones": [],
-        "emails": [
-          "altinelsigorta@gmail.com",
-          "acente@abdulkadiraltinel.com.tr"
-        ],
-        "addresses": [
-          "Adres:  Şehit Ahmet Sokak"
-        ],
-        "socials": {
-          "facebook": "https://www.facebook.com/AALTINELSIGORTA",
-          "instagram": "https://www.instagram.com/abdulkadiraltinelsigorta/"
+        "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı özel hastanelerde ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz. Tamamlayıcı sağlık sigortası yaptırabilmek için SGK’lı olmanız yeterlidir. İhtiyacınıza uygun olan planı seçerek poliçenizi düzenleyebilirsiniz.",
+        "Plan 1: Yatarak Tedavi Teminatından tüm anlaşmalı sağlık kuruluşlarında limitsiz olarak yararlanabilirsiniz. Plan 2: Yatarak Tedavi teminatından limitsiz olarak, Ayakta Tedavi teminatından da yılda 10 kere olmak üzere anlaşmalı olduğumuz tüm sağlık kuruluşlarında yararlanabilirsiniz. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
+    },
+    {
+      "url": "https://www.abdulkadiraltinel.com.tr/Home/Konut",
+      "title": "Altınel Sigorta Aracılık Hizmetleri",
+      "description": "",
+      "type": "about",
+      "images": [
+        {
+          "src": "https://www.abdulkadiraltinel.com.tr/Content/images/logo.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.abdulkadiraltinel.com.tr/Content/images/logo.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.abdulkadiraltinel.com.tr/Content/images/knt.jpg",
+          "alt": ""
         }
-      }
+      ],
+      "sections": [
+        {
+          "title": "Bölüm",
+          "items": [
+            {
+              "type": "bullet",
+              "text": "ANA SAYFA"
+            },
+            {
+              "type": "bullet",
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
+            },
+            {
+              "type": "bullet",
+              "text": "HAKKIMIZDA"
+            },
+            {
+              "type": "bullet",
+              "text": "TARİHÇE"
+            },
+            {
+              "type": "bullet",
+              "text": "AMACIMIZ"
+            },
+            {
+              "type": "bullet",
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "İŞ YERİ SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "ZORUNLU TRAFİK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "KASKO SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "ÖZEL SAĞLIK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "TAMAMLAYICI SAĞLIK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "KONUT SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "DASK (ZORUNLU DEPREM SİGORTASI)"
+            },
+            {
+              "type": "bullet",
+              "text": "SEYAHAT SAĞLIK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "PATİ SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "TEKNE SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "İLETİŞİM"
+            }
+          ]
+        },
+        {
+          "title": "Konut Sigortası",
+          "items": [
+            {
+              "type": "bullet",
+              "text": "Ana Sayfa"
+            },
+            {
+              "type": "bullet",
+              "text": "Konut Sigortası"
+            },
+            {
+              "type": "subheading",
+              "text": "Konut Sigortası"
+            },
+            {
+              "type": "paragraph",
+              "text": "Konut sigortası, evinizde karşılaşabileceğiniz hasarlara karşı güvence sağlayan bir sigortadır. Konut Sigortası ile ister ev sahibi olun ister kiracı, evinizi ve dilerseniz eşyalarınızı yangından hırsızlığa depremden tesisat arızası veya cam kırılmasına kadar birçok sorunun yol açabileceği maddi hasarlar, konut sigortaları tarafından karşılanır."
+            },
+            {
+              "type": "paragraph",
+              "text": "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+            }
+          ]
+        }
+      ],
+      "bio": [
+        "Konut sigortası, evinizde karşılaşabileceğiniz hasarlara karşı güvence sağlayan bir sigortadır. Konut Sigortası ile ister ev sahibi olun ister kiracı, evinizi ve dilerseniz eşyalarınızı yangından hırsızlığa depremden tesisat arızası veya cam kırılmasına kadar birçok sorunun yol açabileceği maddi hasarlar, konut sigortaları tarafından karşılanır.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
+    },
+    {
+      "url": "https://www.abdulkadiraltinel.com.tr/Home/Dask",
+      "title": "Altınel Sigorta Aracılık Hizmetleri",
+      "description": "",
+      "type": "about",
+      "images": [
+        {
+          "src": "https://www.abdulkadiraltinel.com.tr/Content/images/logo.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.abdulkadiraltinel.com.tr/Content/images/logo.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.abdulkadiraltinel.com.tr/Content/images/dask.jpg",
+          "alt": ""
+        }
+      ],
+      "sections": [
+        {
+          "title": "Bölüm",
+          "items": [
+            {
+              "type": "bullet",
+              "text": "ANA SAYFA"
+            },
+            {
+              "type": "bullet",
+              "text": "KURUMSAL HAKKIMIZDA TARİHÇE AMACIMIZ"
+            },
+            {
+              "type": "bullet",
+              "text": "HAKKIMIZDA"
+            },
+            {
+              "type": "bullet",
+              "text": "TARİHÇE"
+            },
+            {
+              "type": "bullet",
+              "text": "AMACIMIZ"
+            },
+            {
+              "type": "bullet",
+              "text": "ÜRÜNLERİMİZ İŞ YERİ SİGORTASI ZORUNLU TRAFİK SİGORTASI KASKO SİGORTASI ÖZEL SAĞLIK SİGORTASI TAMAMLAYICI SAĞLIK SİGORTASI KONUT SİGORTASI DASK (ZORUNLU DEPREM SİGORTASI) SEYAHAT SAĞLIK SİGORTASI PATİ SİGORTASI TEKNE SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "İŞ YERİ SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "ZORUNLU TRAFİK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "KASKO SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "ÖZEL SAĞLIK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "TAMAMLAYICI SAĞLIK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "KONUT SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "DASK (ZORUNLU DEPREM SİGORTASI)"
+            },
+            {
+              "type": "bullet",
+              "text": "SEYAHAT SAĞLIK SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "PATİ SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "TEKNE SİGORTASI"
+            },
+            {
+              "type": "bullet",
+              "text": "İLETİŞİM"
+            }
+          ]
+        },
+        {
+          "title": "DASK (Zorunlu Deprem Sigortası)",
+          "items": [
+            {
+              "type": "bullet",
+              "text": "Ana Sayfa"
+            },
+            {
+              "type": "bullet",
+              "text": "DASK (Zorunlu Deprem Sigortası)"
+            },
+            {
+              "type": "subheading",
+              "text": "DASK (Zorunlu Deprem Sigortası)"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ülkemiz hepimizin bildiği üzere bir deprem bölgesinde yer alıyor. DASK yani Zorunlu Deprem Sigortası kanunlara karşı bir görevden öte kendi yaşamımıza ve sevdiklerimize karşı bir sorumluluktur. Zorunlu Deprem Sigortası, deprem durumunda oluşabilecek bina yıkımı, patlama, yer kayması, yangın gibi afetlerin mülkünüzde bıraktığı hasarları tazmin edebilmeniz amacıyla düzenlenen bir sigortadır. DASK, dairenizi, bina kolonlarını, ortak kullanım alanlarını, merdivenleri, tavanları, tabanları ve bina sahanlıklarını güvence altına almaktadır. Meskenlerinizi kiraya vermeniz, elektrik, su ve doğal gaz bağlatmanız için DASK poliçelerinizi düzenli bir şekilde güncellemeniz ve ödemelerini yapmanız gerekmektedir. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz."
+            },
+            {
+              "type": "paragraph",
+              "text": "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+            }
+          ]
+        }
+      ],
+      "bio": [
+        "Ülkemiz hepimizin bildiği üzere bir deprem bölgesinde yer alıyor. DASK yani Zorunlu Deprem Sigortası kanunlara karşı bir görevden öte kendi yaşamımıza ve sevdiklerimize karşı bir sorumluluktur. Zorunlu Deprem Sigortası, deprem durumunda oluşabilecek bina yıkımı, patlama, yer kayması, yangın gibi afetlerin mülkünüzde bıraktığı hasarları tazmin edebilmeniz amacıyla düzenlenen bir sigortadır. DASK, dairenizi, bina kolonlarını, ortak kullanım alanlarını, merdivenleri, tavanları, tabanları ve bina sahanlıklarını güvence altına almaktadır. Meskenlerinizi kiraya vermeniz, elektrik, su ve doğal gaz bağlatmanız için DASK poliçelerinizi düzenli bir şekilde güncellemeniz ve ödemelerini yapmanız gerekmektedir. Detaylı bilgi için 0212 272 66 57 veya 0544 572 6657 numaralı telefonları arayabilirsiniz.",
+        "1995'den beri, iyi günde kötü günde A kalite sigortacılık hep yanınızda."
+      ]
     }
   ]
 }
