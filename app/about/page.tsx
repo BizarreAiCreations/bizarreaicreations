@@ -1,39 +1,50 @@
-import { loadSite } from "@/lib/content";
+import { groundTruth } from "@/content/ground_truth";
 
 export default function AboutPage() {
-  const site = loadSite();
-  const about = site?.pages.find(p => p.type === 'about') || site?.pages.find(p => /hakk/i.test(p.title || ''));
-  if (!site || !about) {
-    return (
-      <div className="max-w-6xl mx-auto px-4 py-20">
-        <h1 className="text-3xl font-semibold">About</h1>
-        <p className="text-gray-600 mt-3">Content not found. Try running npm run scrape first.</p>
-      </div>
-    );
-  }
+  const about = groundTruth.about;
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50">
+    <section className="bg-white">
       <div className="max-w-6xl mx-auto px-4 py-20">
-        <header className="mb-10">
-          <h1 className="text-4xl font-bold tracking-tight">{about.title || 'About'}</h1>
-          {about.description && <p className="text-gray-600 mt-2 max-w-3xl">{about.description}</p>}
+        <header className="mb-12">
+          <span className="inline-flex items-center rounded-full bg-red-50 text-red-700 px-3 py-1 text-xs font-medium">Hakkımızda</span>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900">Kurumsal</h1>
+          <p className="mt-2 text-slate-600">Güven, profesyonellik ve kurumsal disiplin ile.</p>
         </header>
         <div className="grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-8 space-y-5">
-            {about.bio?.map((p: string, i: number) => (
-              <p key={i} className="text-lg leading-8 text-slate-800">{p}</p>
-            ))}
+          <div className="md:col-span-8 space-y-10">
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-900 border-l-4 border-red-600 pl-3">Hakkımızda</h2>
+              <div className="mt-4 space-y-4 text-slate-800">
+                {about.hakkimizda.map((p, i) => (
+                  <p key={i} className="leading-8">{p}</p>
+                ))}
+              </div>
+            </section>
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-900 border-l-4 border-red-600 pl-3">Tarihçe</h2>
+              <div className="mt-4 space-y-4 text-slate-800">
+                {about.tarihce.map((p, i) => (
+                  <p key={i} className="leading-8">{p}</p>
+                ))}
+              </div>
+            </section>
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-900 border-l-4 border-red-600 pl-3">Misyon ve Vizyon</h2>
+              <div className="mt-4 space-y-4 text-slate-800">
+                {about.misyonVizyon.map((p, i) => (
+                  <p key={i} className="leading-8">{p}</p>
+                ))}
+              </div>
+            </section>
           </div>
           <aside className="md:col-span-4 space-y-4">
-            <div className="rounded-xl border bg-white p-5 shadow-sm">
-              <h3 className="font-semibold mb-2">İletişim</h3>
-              <ul className="text-slate-700 space-y-1">
-                {about.contact?.phones?.map((p: string, i: number) => (
-                  <li key={i}><a className="text-blue-600" href={`tel:${p}`}>{p}</a></li>
-                ))}
-                {about.contact?.emails?.map((e: string, i: number) => (
-                  <li key={i}><a className="text-blue-600" href={`mailto:${e}`}>{e}</a></li>
-                ))}
+            <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h3 className="font-semibold mb-2 text-slate-900">Kurumsal Kimlik</h3>
+              <ul className="text-slate-700 text-sm space-y-1">
+                <li>Görsel: Geleneksel kurumsal</li>
+                <li>Renk: Kırmızı ağırlıklı</li>
+                <li>Ton: Profesyonel ve güven veren</li>
+                <li>Yazı tipi: Poppins</li>
               </ul>
             </div>
           </aside>

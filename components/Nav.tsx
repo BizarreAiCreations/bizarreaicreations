@@ -2,11 +2,11 @@ export default function Nav() {
   return (
     <header className="w-full sticky top-0 z-40 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" className="text-xl font-semibold tracking-tight">Op. Dr. Abdülkadir Altınel</a>
-        <nav className="hidden md:flex items-center gap-6 text-sm text-gray-700">
-          <a href="/services" className="hover:text-black">Services</a>
-          <a href="/about" className="hover:text-black">About</a>
-          <a href="/contact" className="hover:text-black">Contact</a>
+        <a href="/" className="text-xl font-semibold tracking-tight text-red-700">Op. Dr. Abdülkadir Altınel</a>
+        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
+          <a href="/services" className="hover:text-red-700">Services</a>
+          <a href="/about" className="hover:text-red-700">About</a>
+          <a href="/contact" className="hover:text-red-700">Contact</a>
         </nav>
       </div>
     </header>
