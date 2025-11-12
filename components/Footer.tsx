@@ -1,0 +1,10 @@
+export default function Footer() {
+  return (
+    <footer className="border-t border-gray-100 py-8 text-sm text-gray-600">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p>© {new Date().getFullYear()} Clinic. All rights reserved.</p>
+        <p>Built with Next.js + Tailwind</p>
+      </div>
+    </footer>
+  );
+}
