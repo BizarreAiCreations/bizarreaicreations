@@ -63,7 +63,10 @@ export const groundTruth: GroundTruth = {
       { title: 'Özel Sağlık Sigortası', description: "Sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigortadır. A + hastaneler dahil olmak üzere, tüm özel hastanelerden yararlanabilirsiniz." },
     ],
     stats: [
-      // Lütfen "Rakamlarla Altınel Sigorta" verilerini burada label/value çifti olarak sağlayın.
+      { label: 'Toplam POLİÇE', value: '47817' },
+      { label: 'Toplam Kasko POLİÇESİ', value: '7406' },
+      { label: 'Toplam Sağlık POLİÇESİ', value: '3970' },
+      { label: 'Toplam Konut POLİÇESİ', value: '2919' },
     ],
   },
   about: {

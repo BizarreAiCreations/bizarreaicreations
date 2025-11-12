@@ -37,17 +37,6 @@ export default function AboutPage() {
               </div>
             </section>
           </div>
-          <aside className="md:col-span-4 space-y-4">
-            <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-              <h3 className="font-semibold mb-2 text-slate-900">Kurumsal Kimlik</h3>
-              <ul className="text-slate-700 text-sm space-y-1">
-                <li>Görsel: Geleneksel kurumsal</li>
-                <li>Renk: Kırmızı ağırlıklı</li>
-                <li>Ton: Profesyonel ve güven veren</li>
-                <li>Yazı tipi: Poppins</li>
-              </ul>
-            </div>
-          </aside>
         </div>
       </div>
     </section>

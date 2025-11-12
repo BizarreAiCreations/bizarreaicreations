@@ -7,18 +7,19 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-white to-slate-50">
-        <div className="max-w-6xl mx-auto px-4 py-20">
-          <div className="max-w-2xl">
-            <span className="inline-flex items-center rounded-full bg-red-50 text-red-700 px-3 py-1 text-xs font-medium">Kurumsal Sigortacılık</span>
-            <h1 className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-slate-900">{home.hero.title}</h1>
-            {home.hero.subtitle && (
-              <p className="mt-4 text-lg text-slate-700">{home.hero.subtitle}</p>
-            )}
-            <div className="mt-8 flex items-center gap-3">
-              <a href="/services" className="inline-flex items-center rounded-lg bg-red-700 px-5 py-3 text-white font-medium hover:bg-red-800 transition">Ürünlerimiz</a>
-              <a href="/contact" className="inline-flex items-center rounded-lg border border-slate-300 px-5 py-3 text-slate-800 font-medium hover:bg-slate-50 transition">İletişim</a>
-            </div>
+      <section className="relative overflow-hidden bg-gradient-to-b from-red-700 to-red-800 text-white">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\"><defs><pattern id=\"p\" width=\"40\" height=\"40\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"40\" height=\"40\" fill=\"none\"/><circle cx=\"0\" cy=\"0\" r=\"1\" fill=\"%23ffffff22\"/></pattern></defs><rect width=\"100%\" height=\"100%\" fill=\"url(%23p)\"/></svg>')] opacity-40"></div>
+        <div className="relative max-w-6xl mx-auto px-4 py-24 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">{home.hero.title}</h1>
+          <div className="mt-6 space-y-1 text-lg md:text-xl font-medium">
+            <p>1995'den beri...</p>
+            <p>iyi günde kötü günde</p>
+            <p>A kalite sigortacılık hep yanınızda.</p>
+          </div>
+          <div className="mt-10 flex items-center justify-center gap-3">
+            <a href="/teklif-al" className="inline-flex items-center rounded-lg bg-white px-5 py-3 text-red-800 font-semibold hover:bg-red-50 transition">Teklif Al</a>
+            <a href="/services" className="inline-flex items-center rounded-lg bg-red-900/40 px-5 py-3 text-white font-medium hover:bg-red-900/60 transition">Ürünlerimiz</a>
+            <a href="/contact" className="inline-flex items-center rounded-lg border border-white/30 px-5 py-3 text-white font-medium hover:bg-white/10 transition">İletişim</a>
           </div>
         </div>
       </section>
@@ -32,7 +33,6 @@ export default function Home() {
               <div key={i} className="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-slate-900 group-hover:text-red-700">{f.title}</h3>
-                  {f.description && <p className="text-slate-600 text-sm mt-2 leading-6">{f.description}</p>}
                 </div>
               </div>
             ))}
@@ -57,17 +57,14 @@ export default function Home() {
         </section>
       )}
 
-      {/* Services grid (full list preview) */}
+      {/* Ürünlerimiz (adlar) */}
       <section className="bg-white">
         <div className="max-w-6xl mx-auto px-4 py-14">
-          <h2 className="text-2xl font-semibold text-slate-900">Tüm Ürünler</h2>
-          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-2xl font-semibold text-slate-900">Ürünlerimiz</h2>
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {services.map((s, i) => (
-              <div key={i} className="rounded-2xl border border-slate-200 bg-white shadow-sm">
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-slate-900">{s.title}</h3>
-                  {s.description && <p className="text-slate-600 text-sm mt-2 leading-6">{s.description}</p>}
-                </div>
+              <div key={i} className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-900 hover:border-red-300 hover:shadow-sm transition">
+                {s.title}
               </div>
             ))}
           </div>
