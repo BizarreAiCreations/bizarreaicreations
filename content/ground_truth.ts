@@ -31,19 +31,40 @@ export type FooterContent = {
   altBanner: string;
 };
 
+export type HomeContent = {
+  hero: { title: string; subtitle?: string };
+  featured: Array<{ title: string; description?: string }>;
+  stats: Array<{ label: string; value: string }>; // Rakamlarla Altınel Sigorta
+};
+
 export type GroundTruth = {
   brand: Brand;
+  home: HomeContent;
   about: AboutContent;
   services: ServicesContent;
   contact: ContactContent;
   footer: FooterContent;
 };
 
-export const groundTruth: GroundTruth = {
+export const groundTruth: GroundTruth = { 
   brand: {
     visuals: 'red-dominated authority',
     fonts: { primary: 'Poppins' },
     tone: ['Professional', 'Reassuring', 'Trustworthy'],
+  },
+  home: {
+    hero: {
+      title: 'Altınel Sigorta',
+      subtitle: "1995'den beri, iyi günde kötü günde — A kalite sigortacılık hep yanınızda.",
+    },
+    featured: [
+      { title: 'Zorunlu Trafik Sigortası', description: "Yasal zorunluluk olan Trafik Sigortası ile, kaza sonucunda diğer araç veya üçüncü şahıslara verebileceğiniz zararlar için sizi güvence altına alan bir sigorta ürünüdür." },
+      { title: 'Kasko Sigortası', description: "Araçların kaza, çalınma ve darp edilmesine yönelik hazırlanan kasko poliçeleri, aynı zamanda farklı ek teminatlar ile kapsamı genişletilerek daha da kullanışlı ve ihtiyaca yönelik hale getirilebilir." },
+      { title: 'Özel Sağlık Sigortası', description: "Sağlığınızda meydana gelebilecek hastalıkların tedavisini ve çeşitli farklı hizmetlerden yararlanmanızı sağlayan sigortadır. A + hastaneler dahil olmak üzere, tüm özel hastanelerden yararlanabilirsiniz." },
+    ],
+    stats: [
+      // Lütfen "Rakamlarla Altınel Sigorta" verilerini burada label/value çifti olarak sağlayın.
+    ],
   },
   about: {
     hakkimizda: [
