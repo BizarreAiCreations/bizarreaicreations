@@ -1,0 +1,22 @@
+# Sistem Dosyaları
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Vercel & Node
+.vercel/
+node_modules/
+npm-debug.log
+
+# Loglar
+*.log
+
+# Kişisel Notlar
+TODO.md

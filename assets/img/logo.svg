@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <!-- Background -->
+  <rect width="240" height="80" fill="#FFFFFF" rx="12"/>
+  
+  <!-- Shield Icon -->
+  <path d="M30 20 L30 35 C30 45 35 50 40 52 C45 50 50 45 50 35 L50 20 L40 15 Z" 
+        fill="#B91C1C" stroke="#991B1B" stroke-width="1.5"/>
+  
+  <!-- Company Name -->
+  <text x="65" y="35" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#0F172A">
+    ALTINEL
+  </text>
+  <text x="65" y="52" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#B91C1C">
+    SİGORTA
+  </text>
+  <text x="65" y="65" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="400" fill="#64748B">
+    1995'den Beri Güven
+  </text>
+</svg>

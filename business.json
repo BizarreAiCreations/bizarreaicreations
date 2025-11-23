@@ -1,0 +1,73 @@
+{
+  "name": "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd. Şti",
+  "overview": "Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd. Şti is a Turkish insurance agency established in 1995, offering a wide range of A-quality insurance products, including traffic, health, home, and pet insurance. The company is committed to customer-focused solutions, timely risk assessment, and maximizing customer satisfaction.",
+  "websiteUrl": "https://www.abdulkadiraltinel.com.tr/",
+  "brandValues": ["Müşteri odaklı çözümler", "Zamanında ve eksiksiz risk değerlendirmesi", "Müşteri memnuniyetini maksimize etmek", "A kalite sigortacılık"],
+  "visualAesthetics": ["traditional corporate", "strict professionalism", "red-dominated authority", "reliable", "formal"],
+  "toneOfVoice": ["Professional", "Reassuring", "Service-oriented", "Trustworthy"],
+  "fonts": ["poppins"],
+  "campaigns": [{
+    "creatives": [{
+      "title": "Hayatınızın En Değerlileri",
+      "versions": [{
+        "fileName": "resource_8PsCk-2HuhX8nVSi-1Fku4.png"
+      }]
+    }, {
+      "title": "Güven Altınel\u0027den Başlar.",
+      "versions": [{
+        "fileName": "resource_aqcZkhI4gvi89_MOpHE4Mq.png"
+      }]
+    }, {
+      "title": "Yuvanız Altın Değerinde.",
+      "versions": [{
+        "fileName": "resource_avODdDJHPYw6GBUpfVUO0z.png"
+      }]
+    }, {
+      "title": "28 Yıllık Kalite Güvencesi.",
+      "versions": [{
+        "fileName": "resource_8pXuLbTm8d6bdkMgbHZO1P.png"
+      }]
+    }]
+  }, {
+    "creatives": [{
+      "title": "Kış Geliyor, Güvenceniz Hazır mı?",
+      "versions": [{
+        "fileName": "resource_9TMCp82E18_3sSyv3d1k_K.png"
+      }]
+    }, {
+      "title": "Kış Yolları Riskli Olmasın",
+      "versions": [{
+        "fileName": "resource_8FX7VWmOjTaarY1rRn-4hz.png"
+      }]
+    }, {
+      "title": "Eviniz İçin Tam Koruma",
+      "versions": [{
+        "fileName": "resource_aDdJg8h1bs39JF3rQvEkWH.png"
+      }]
+    }, {
+      "title": "Huzurlu Yarınlar İçin",
+      "versions": [{
+        "fileName": "resource_9zTL1pPpWz21on3nGGR4Lz.png"
+      }]
+    }]
+  }, {
+    "creatives": [{
+      "title": "Kış Gelirken, Huzurunuz Cebinizde."
+    }, {
+      "title": "Yolculuklar planlanırken...",
+      "versions": [{
+        "fileName": "resource_bGj222RRwDlfOniV3x7OiJ.png"
+      }]
+    }, {
+      "title": "Büyük adımlar atılırken...",
+      "versions": [{
+        "fileName": "resource_bxl3C2WP-hj8FK7oBPI_aL.png"
+      }]
+    }, {
+      "title": "Hayatın tadını çıkarırken...",
+      "versions": [{
+        "fileName": "resource_akDHF-MrvOB0eTFYQU0Okl.png"
+      }]
+    }]
+  }]
+}

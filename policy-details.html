@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayları | Altınel Sigorta</title>
+    <meta name="description" content="Sigorta ürünü detaylı bilgileri, kapsam ve teminatlar.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .text-primary {
+            color: #B91C1C;
+        }
+        
+        .bg-primary {
+            background-color: #B91C1C;
+        }
+        
+        .coverage-item {
+            transition: all 0.3s ease;
+        }
+        
+        .coverage-item:hover {
+            background: #FEF2F2;
+            border-color: #B91C1C;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/img/logo.jpg" alt="Altınel Sigorta Logo" class="h-16 lg:h-20 w-auto object-contain">
+                    <div class="hidden md:block">
+                        <h1 class="text-2xl lg:text-3xl font-bold text-gray-900">Abdülkadir Altınel</h1>
+                        <p class="text-xs text-gray-500">Sigorta Aracılık Hizmetleri</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover-primary font-medium transition-colors">Ana Sayfa</a>
+                    <a href="index.html#urunler" class="text-gray-700 hover-primary font-medium transition-colors">Ürünlerimiz</a>
+                    <a href="index.html#hakkimizda" class="text-gray-700 hover-primary font-medium transition-colors">Kurumsal</a>
+                    <a href="index.html#iletisim" class="text-gray-700 hover-primary font-medium transition-colors">İletişim</a>
+                    <a href="blog.html" class="text-gray-700 hover-primary font-medium transition-colors">Blog</a>
+                    
+                    <!-- Status Badge -->
+                    <div id="status-badge" class="status-badge status-closed">
+                        <span class="status-dot"></span>
+                        <span id="status-text">Mesai Dışı</span>
+                    </div>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <button id="dark-mode-toggle" class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                        <i class="fas fa-moon text-gray-700"></i>
+                    </button>
+                    
+                    <a href="index.html#teklif" class="btn-primary">
+                        Teklif Al
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover-primary">Ana Sayfa</a>
+                <a href="index.html#urunler" class="block py-2 text-gray-700 hover-primary">Ürünlerimiz</a>
+                <a href="index.html#hakkimizda" class="block py-2 text-gray-700 hover-primary">Kurumsal</a>
+                <a href="index.html#iletisim" class="block py-2 text-gray-700 hover-primary">İletişim</a>
+                <a href="blog.html" class="block py-2 text-gray-700 hover-primary">Blog</a>
+                <div class="flex items-center gap-3 mt-4">
+                    <div id="status-badge-mobile" class="status-badge status-closed flex-1">
+                        <span class="status-dot"></span>
+                        <span id="status-text-mobile">Mesai Dışı</span>
+                    </div>
+                    <button id="dark-mode-toggle-mobile" class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
+                        <i class="fas fa-moon text-gray-700"></i>
+                    </button>
+                </div>
+                <a href="index.html#teklif" class="block mt-4 btn-primary text-center">Teklif Al</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="w-20 h-20 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i id="product-icon" class="fas fa-car text-4xl text-white"></i>
+                </div>
+                <h1 id="product-title" class="text-5xl lg:text-6xl font-bold text-white mb-6">
+                    Kasko Sigortası
+                </h1>
+                <p id="product-subtitle" class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Aracınızın kaza, çarpma, çalınma ve doğal afetlere karşı tam koruması
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Content -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Main Content -->
+                <div class="lg:col-span-2 space-y-8">
+                    
+                    <!-- Overview -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Genel Bakış</h2>
+                        <div id="product-overview" class="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
+                            <p>
+                                Kasko sigortası, aracınızı kaza, çarpma, çalınma, yangın ve doğal afetler gibi risklere karşı koruma altına alan kapsamlı bir sigorta türüdür.
+                            </p>
+                            <p>
+                                6 farklı sigorta şirketinden aldığımız teklifler ile size en uygun fiyat ve kapsam seçeneklerini sunuyoruz.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coverage Table -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Kapsam ve Teminatlar</h2>
+                        <div class="space-y-3" id="coverage-list">
+                            <div class="coverage-item flex items-start gap-4 p-4 border border-gray-200 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Kaza Teminatı</h3>
+                                    <p class="text-sm text-gray-600">Trafik kazaları sonucu oluşan hasarlar tam olarak karşılanır.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="coverage-item flex items-start gap-4 p-4 border border-gray-200 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Çalınma Teminatı</h3>
+                                    <p class="text-sm text-gray-600">Araç çalınması durumunda ekspertiz değeri üzerinden ödeme yapılır.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="coverage-item flex items-start gap-4 p-4 border border-gray-200 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Yangın Teminatı</h3>
+                                    <p class="text-sm text-gray-600">Yangın, kundaklama ve patlama sonucu oluşan hasarlar karşılanır.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="coverage-item flex items-start gap-4 p-4 border border-gray-200 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Doğal Afet Teminatı</h3>
+                                    <p class="text-sm text-gray-600">Sel, su baskını, fırtına gibi doğal olaylar karşılanır.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="coverage-item flex items-start gap-4 p-4 border border-gray-200 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Mini Onarım</h3>
+                                    <p class="text-sm text-gray-600">Cam, boya ve küçük hasarlar hasar kaydı oluşturmadan onarılır.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="coverage-item flex items-start gap-4 p-4 border border-gray-200 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">7/24 Asistans</h3>
+                                    <p class="text-sm text-gray-600">Yol yardım, çekici ve acil durum hizmetleri.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Sık Sorulan Sorular</h2>
+                        <div class="space-y-4" id="faq-list">
+                            <div class="border-b border-gray-200 pb-4">
+                                <button class="faq-question flex items-center justify-between w-full text-left font-semibold text-gray-900 hover:text-red-700">
+                                    <span>Kasko sigortası zorunlu mu?</span>
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </button>
+                                <div class="faq-answer hidden mt-3 text-gray-600">
+                                    Hayır, kasko sigortası zorunlu değildir. Ancak aracınızı kapsamlı şekilde korumak için önerilir. Kredi ile alınan araçlarda banka tarafından zorunlu tutulabilir.
+                                </div>
+                            </div>
+                            
+                            <div class="border-b border-gray-200 pb-4">
+                                <button class="faq-question flex items-center justify-between w-full text-left font-semibold text-gray-900 hover:text-red-700">
+                                    <span>Hasar durumunda muafiyet nedir?</span>
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </button>
+                                <div class="faq-answer hidden mt-3 text-gray-600">
+                                    Muafiyet, hasar durumunda sigortalının karşılaması gereken tutardır. Genellikle poliçede belirtilen sabit bir tutar veya hasar tutarının belli bir yüzdesi olur.
+                                </div>
+                            </div>
+                            
+                            <div class="border-b border-gray-200 pb-4">
+                                <button class="faq-question flex items-center justify-between w-full text-left font-semibold text-gray-900 hover:text-red-700">
+                                    <span>İkame araç nedir?</span>
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </button>
+                                <div class="faq-answer hidden mt-3 text-gray-600">
+                                    Aracınız hasarlı iken kullanabileceğiniz geçici bir araçtır. Bu teminat ek prim karşılığında poliçeye eklenebilir ve genellikle tamir süresince geçerlidir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-24 space-y-6">
+                        
+                        <!-- Quote Form -->
+                        <div id="teklif-al" class="bg-white rounded-2xl p-6 shadow-lg">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                                <i class="fas fa-calculator text-primary mr-2"></i>
+                                Hemen Teklif Alın
+                            </h3>
+                            
+                            <form id="quote-form" class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Ad Soyad *</label>
+                                    <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Telefon *</label>
+                                    <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">E-mail *</label>
+                                    <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                                </div>
+                                
+                                <div id="dynamic-fields">
+                                    <!-- Product-specific fields will be inserted here -->
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-red-800 transition-colors">
+                                    <i class="fas fa-paper-plane mr-2"></i>
+                                    Teklif Gönder
+                                </button>
+                            </form>
+                            
+                            <div id="quote-message" class="hidden mt-4 p-4 rounded-lg"></div>
+                        </div>
+
+                        <!-- Quick Contact -->
+                        <div class="bg-gradient-to-br from-red-700 to-red-900 rounded-2xl p-6 text-white">
+                            <h3 class="text-xl font-bold mb-4">
+                                <i class="fas fa-phone-volume mr-2"></i>
+                                Hemen Arayın
+                            </h3>
+                            <p class="text-red-100 mb-4 text-sm">
+                                Detaylı bilgi ve anında teklif için bizi arayın
+                            </p>
+                            <a href="tel:+902122726657" class="block bg-white text-red-700 text-center py-3 rounded-lg font-bold hover:bg-red-50 transition-colors mb-3">
+                                <i class="fas fa-phone mr-2"></i>
+                                0212 272 66 57
+                            </a>
+                            <a href="https://wa.me/905445726657" target="_blank" class="block bg-green-500 text-white text-center py-3 rounded-lg font-bold hover:bg-green-600 transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp İletişim
+                            </a>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Neden Biz?</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-star text-yellow-500 mt-1"></i>
+                                    <span class="text-sm text-gray-600">28 yıllık deneyim</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-star text-yellow-500 mt-1"></i>
+                                    <span class="text-sm text-gray-600">6 şirketten teklif</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-star text-yellow-500 mt-1"></i>
+                                    <span class="text-sm text-gray-600">Hızlı hasar karşılama</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-star text-yellow-500 mt-1"></i>
+                                    <span class="text-sm text-gray-600">7/24 destek hattı</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-300 pt-12 pb-8 px-6">
+        <div class="container mx-auto text-center">
+            <a href="index.html" class="inline-flex items-center gap-3 mb-4">
+                <img src="assets/img/logo.svg" alt="Altınel Sigorta Logo" class="h-12 w-auto mx-auto">
+            </a>
+            <div class="border-t border-gray-800 pt-6 mt-6">
+                <p class="text-sm">&copy; 2024 Abdülkadir Altınel Sigorta. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product data
+        const products = {
+            'kasko': {
+                icon: 'fa-car',
+                title: 'Kasko Sigortası',
+                subtitle: 'Aracınızın kaza, çarpma, çalınma ve doğal afetlere karşı tam koruması',
+                overview: 'Kasko sigortası, aracınızı kaza, çarpma, çalınma, yangın ve doğal afetler gibi risklere karşı koruma altına alan kapsamlı bir sigorta türüdür. 6 farklı sigorta şirketinden aldığımız teklifler ile size en uygun fiyat ve kapsam seçeneklerini sunuyoruz.',
+                fields: [
+                    { label: 'Araç Plakası', type: 'text', name: 'plate', placeholder: '34 ABC 1234' },
+                    { label: 'Model Yılı', type: 'number', name: 'year', placeholder: '2024' }
+                ]
+            },
+            'saglik': {
+                icon: 'fa-heartbeat',
+                title: 'Özel Sağlık Sigortası',
+                subtitle: 'A+ hastaneler dahil tüm özel sağlık kuruluşlarından yararlanın',
+                overview: 'Özel sağlık sigortası ile siz ve aileniz tüm özel sağlık kuruluşlarından faydalanabilir, sağlık harcamalarınızı minimuma indirebilirsiniz. Modüler plan seçenekleri ile ihtiyacınıza özel paketler oluşturabilirsiniz.',
+                fields: [
+                    { label: 'Doğum Yılı', type: 'number', name: 'birthyear', placeholder: '1990' },
+                    { label: 'Kişi Sayısı', type: 'number', name: 'persons', placeholder: '1' }
+                ]
+            },
+            'trafik': {
+                icon: 'fa-road',
+                title: 'Zorunlu Trafik Sigortası',
+                subtitle: 'Yasal zorunluluk olan trafik sigortası ile güvende olun',
+                overview: 'Zorunlu trafik sigortası, trafik kazaları sonucunda üçüncü şahıslara verebileceğiniz maddi ve bedeni zararları karşılayan yasal zorunluluktur. Hızlı ve kolay online işlem ile poliçenizi hemen alabilirsiniz.',
+                fields: [
+                    { label: 'Araç Plakası', type: 'text', name: 'plate', placeholder: '34 ABC 1234' }
+                ]
+            },
+            'konut': {
+                icon: 'fa-home',
+                title: 'Konut Sigortası',
+                subtitle: 'Evinizi ve eşyalarınızı güvence altına alın',
+                overview: 'Konut sigortası ile evinizi yangın, hırsızlık, deprem, sel ve diğer risklere karşı koruyabilirsiniz. Eşya sigortası ile ev içi değerli eşyalarınız da güvence altında.',
+                fields: [
+                    { label: 'İl', type: 'text', name: 'city', placeholder: 'İstanbul' },
+                    { label: 'Metrekare', type: 'number', name: 'sqm', placeholder: '100' }
+                ]
+            }
+        };
+
+        // Get product from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productKey = urlParams.get('product') || 'kasko';
+        const product = products[productKey] || products['kasko'];
+
+        // Update page content
+        document.getElementById('product-icon').className = `fas ${product.icon} text-4xl text-white`;
+        document.getElementById('product-title').textContent = product.title;
+        document.getElementById('product-subtitle').textContent = product.subtitle;
+        document.getElementById('product-overview').innerHTML = `<p>${product.overview}</p>`;
+
+        // Add dynamic form fields
+        const dynamicFields = document.getElementById('dynamic-fields');
+        product.fields.forEach(field => {
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <label class="block text-sm font-medium text-gray-700 mb-2">${field.label} *</label>
+                <input type="${field.type}" name="${field.name}" required placeholder="${field.placeholder}" 
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+            `;
+            dynamicFields.appendChild(div);
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // Quote form submission
+        document.getElementById('quote-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const message = document.getElementById('quote-message');
+            message.classList.remove('hidden');
+            message.className = 'mt-4 p-4 rounded-lg bg-blue-50 border border-blue-200 text-blue-700';
+            message.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Teklifiniz hazırlanıyor...';
+            
+            setTimeout(() => {
+                message.className = 'mt-4 p-4 rounded-lg bg-green-50 border border-green-200 text-green-700';
+                message.innerHTML = '<i class="fas fa-check-circle mr-2"></i>Teklif talebiniz alındı! En kısa sürede size dönüş yapacağız.';
+                this.reset();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Haberler | Altınel Sigorta</title>
+    <meta name="description" content="Sigorta sektörü haberleri, güncel kampanyalar ve faydalı bilgiler.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Link main stylesheet -->
+    <link rel="stylesheet" href="index.html">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(185, 28, 28, 0.15);
+        }
+        
+        .blog-card img {
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .category-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 9999px;
+        }
+        
+        .text-primary {
+            color: #B91C1C;
+        }
+        
+        .bg-primary {
+            background-color: #B91C1C;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/img/logo.jpg" alt="Altınel Sigorta Logo" class="h-16 lg:h-20 w-auto object-contain">
+                    <div class="hidden md:block">
+                        <h1 class="text-2xl lg:text-3xl font-bold text-gray-900">Abdülkadir Altınel</h1>
+                        <p class="text-xs text-gray-500">Sigorta Aracılık Hizmetleri</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover-primary font-medium transition-colors">Ana Sayfa</a>
+                    <a href="index.html#urunler" class="text-gray-700 hover-primary font-medium transition-colors">Ürünlerimiz</a>
+                    <a href="index.html#hakkimizda" class="text-gray-700 hover-primary font-medium transition-colors">Kurumsal</a>
+                    <a href="index.html#iletisim" class="text-gray-700 hover-primary font-medium transition-colors">İletişim</a>
+                    <a href="blog.html" class="text-primary font-medium transition-colors">Blog</a>
+                    
+                    <!-- Status Badge -->
+                    <div id="status-badge" class="status-badge status-closed">
+                        <span class="status-dot"></span>
+                        <span id="status-text">Mesai Dışı</span>
+                    </div>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <button id="dark-mode-toggle" class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                        <i class="fas fa-moon text-gray-700"></i>
+                    </button>
+                    
+                    <a href="index.html#teklif" class="btn-primary">
+                        Teklif Al
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover-primary">Ana Sayfa</a>
+                <a href="index.html#urunler" class="block py-2 text-gray-700 hover-primary">Ürünlerimiz</a>
+                <a href="index.html#hakkimizda" class="block py-2 text-gray-700 hover-primary">Kurumsal</a>
+                <a href="index.html#iletisim" class="block py-2 text-gray-700 hover-primary">İletişim</a>
+                <a href="blog.html" class="block py-2 text-primary font-semibold">Blog</a>
+                <div class="flex items-center gap-3 mt-4">
+                    <div id="status-badge-mobile" class="status-badge status-closed flex-1">
+                        <span class="status-dot"></span>
+                        <span id="status-text-mobile">Mesai Dışı</span>
+                    </div>
+                    <button id="dark-mode-toggle-mobile" class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
+                        <i class="fas fa-moon text-gray-700"></i>
+                    </button>
+                </div>
+                <a href="index.html#teklif" class="block mt-4 btn-primary text-center">Teklif Al</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6">
+                Blog & <span class="text-red-500">Haberler</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Sigorta sektörü haberleri, güncel kampanyalar ve faydalı bilgiler
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 px-6 bg-white border-b border-gray-200 sticky top-20 z-40">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap gap-3 justify-center">
+                <button class="category-filter active px-6 py-2 rounded-full bg-primary text-white font-semibold" data-category="all">
+                    Tümü
+                </button>
+                <button class="category-filter px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-semibold hover:bg-gray-200" data-category="haberler">
+                    Haberler
+                </button>
+                <button class="category-filter px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-semibold hover:bg-gray-200" data-category="kampanyalar">
+                    Kampanyalar
+                </button>
+                <button class="category-filter px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-semibold hover:bg-gray-200" data-category="rehber">
+                    Rehber
+                </button>
+                <button class="category-filter px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-semibold hover:bg-gray-200" data-category="saglik">
+                    Sağlık
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-card bg-white rounded-2xl overflow-hidden shadow-lg" data-category="kampanyalar">
+                    <div class="overflow-hidden h-56">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" alt="Kasko Kampanyası - Yeni yıl fırsatları" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="category-badge bg-red-100 text-red-700">Kampanya</span>
+                            <span class="text-sm text-gray-500">15 Ocak 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-700 transition-colors">
+                            Yeni Yıl Kasko Kampanyası: %30'a Varan İndirim
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            2024 yılına özel kasko sigortalarında %30'a varan indirim fırsatı! Şimdi teklif alın, avantajlı fiyatlardan yararlanın.
+                        </p>
+                        <a href="#" class="text-red-700 font-semibold inline-flex items-center hover:underline">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card bg-white rounded-2xl overflow-hidden shadow-lg" data-category="rehber">
+                    <div class="overflow-hidden h-56">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Sağlık Sigortası Rehberi - Doktor muayenesi" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="category-badge bg-blue-100 text-blue-700">Rehber</span>
+                            <span class="text-sm text-gray-500">12 Ocak 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-700 transition-colors">
+                            Özel Sağlık Sigortası Seçerken Dikkat Edilmesi Gerekenler
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Sağlık sigortası seçerken nelere dikkat etmelisiniz? İhtiyacınıza uygun planı nasıl belirlersiniz? Tüm detaylar bu rehberde.
+                        </p>
+                        <a href="#" class="text-red-700 font-semibold inline-flex items-center hover:underline">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card bg-white rounded-2xl overflow-hidden shadow-lg" data-category="haberler">
+                    <div class="overflow-hidden h-56">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="DASK Haberi - Konut sigortası" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="category-badge bg-green-100 text-green-700">Haber</span>
+                            <span class="text-sm text-gray-500">10 Ocak 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-700 transition-colors">
+                            DASK Primlerinde 2024 Yılı Düzenlemeleri Açıklandı
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Zorunlu deprem sigortası DASK primlerinde yeni düzenlemeler yürürlüğe girdi. Yeni fiyatlar ve kapsam değişiklikleri hakkında bilgi alın.
+                        </p>
+                        <a href="#" class="text-red-700 font-semibold inline-flex items-center hover:underline">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card bg-white rounded-2xl overflow-hidden shadow-lg" data-category="saglik">
+                    <div class="overflow-hidden h-56">
+                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80" alt="Sağlık Haberi - Tamamlayıcı sağlık sigortası" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="category-badge bg-purple-100 text-purple-700">Sağlık</span>
+                            <span class="text-sm text-gray-500">8 Ocak 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-700 transition-colors">
+                            Tamamlayıcı Sağlık Sigortası ile SGK Açığınızı Kapatın
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            SGK'nın karşılamadığı sağlık giderleriniz için tamamlayıcı sağlık sigortası çözümleri. Avantajları ve kapsam detayları.
+                        </p>
+                        <a href="#" class="text-red-700 font-semibold inline-flex items-center hover:underline">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card bg-white rounded-2xl overflow-hidden shadow-lg" data-category="rehber">
+                    <div class="overflow-hidden h-56">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="Seyahat Sigortası - Yurt dışı tatil güvencesi" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="category-badge bg-blue-100 text-blue-700">Rehber</span>
+                            <span class="text-sm text-gray-500">5 Ocak 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-700 transition-colors">
+                            Yurt Dışı Seyahatlerinde Sağlık Sigortası Neden Önemli?
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Yurt dışı seyahatlerinizde sağlık güvencesi olmadan yola çıkmayın. Seyahat sağlık sigortasının önemi ve kapsamı hakkında her şey.
+                        </p>
+                        <a href="#" class="text-red-700 font-semibold inline-flex items-center hover:underline">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card bg-white rounded-2xl overflow-hidden shadow-lg" data-category="haberler">
+                    <div class="overflow-hidden h-56">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=800&q=80" alt="Pati Sigortası - Evcil hayvan sağlık güvencesi" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="category-badge bg-green-100 text-green-700">Haber</span>
+                            <span class="text-sm text-gray-500">3 Ocak 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-700 transition-colors">
+                            Pati Sigortası Talebi 2024'te %40 Arttı
+                        </h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Evcil hayvan sahiplerinin bilinçlenmesiyle pati sigortası talebi hızla artıyor. Pati sigortası ne kapsıyor, neden önemli?
+                        </p>
+                        <a href="#" class="text-red-700 font-semibold inline-flex items-center hover:underline">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center gap-2 mt-12">
+                <button class="w-10 h-10 rounded-lg bg-gray-200 flex items-center justify-center hover:bg-gray-300">
+                    <i class="fas fa-chevron-left text-gray-600"></i>
+                </button>
+                <button class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center font-semibold">1</button>
+                <button class="w-10 h-10 rounded-lg bg-gray-200 flex items-center justify-center hover:bg-gray-300 font-semibold">2</button>
+                <button class="w-10 h-10 rounded-lg bg-gray-200 flex items-center justify-center hover:bg-gray-300 font-semibold">3</button>
+                <button class="w-10 h-10 rounded-lg bg-gray-200 flex items-center justify-center hover:bg-gray-300">
+                    <i class="fas fa-chevron-right text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-slate-900 text-gray-300 pt-16 pb-8 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-8">
+                <a href="index.html" class="inline-flex items-center gap-3 mb-4">
+                    <img src="assets/img/logo.svg" alt="Altınel Sigorta Logo" class="h-12 w-auto mx-auto">
+                </a>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 Abdülkadir Altınel Sigorta. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Category filter
+        const filterButtons = document.querySelectorAll('.category-filter');
+        const blogCards = document.querySelectorAll('.blog-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-gray-700');
+                });
+                this.classList.add('active', 'bg-primary', 'text-white');
+                this.classList.remove('bg-gray-100', 'text-gray-700');
+                
+                // Filter blog posts
+                blogCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
