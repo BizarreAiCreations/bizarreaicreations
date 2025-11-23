@@ -57,10 +57,10 @@ function updateBusinessStatus() {
     const minutes = now.getMinutes();
     const currentTime = hours * 60 + minutes;
     
-    // Business hours: Monday-Friday, 9:00-18:00
+    // Business hours: Monday-Friday (1-5), 09:00-18:00
     const isWeekday = day >= 1 && day <= 5;
-    const openTime = 9 * 60; // 9:00 AM
-    const closeTime = 18 * 60; // 6:00 PM
+    const openTime = 9 * 60; // 09:00 (9:00 AM)
+    const closeTime = 18 * 60; // 18:00 (6:00 PM)
     const isOpen = isWeekday && currentTime >= openTime && currentTime < closeTime;
     
     const statusBadge = document.getElementById('status-badge');

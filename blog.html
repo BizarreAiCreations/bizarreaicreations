@@ -21,10 +21,127 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
+        /* Dark Mode */
+        body.dark-mode {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        body.dark-mode .bg-white {
+            background: #1e293b !important;
+        }
+        
+        body.dark-mode .bg-gray-50 {
+            background: #0f172a !important;
+        }
+        
+        body.dark-mode .text-gray-900 {
+            color: #e2e8f0 !important;
+        }
+        
+        body.dark-mode .text-gray-700 {
+            color: #cbd5e1 !important;
+        }
+        
+        body.dark-mode .text-gray-600 {
+            color: #94a3b8 !important;
+        }
+        
+        body.dark-mode .border-gray-200 {
+            border-color: #334155 !important;
+        }
+        
+        /* Primary Colors */
+        .text-primary {
+            color: #B91C1C;
+        }
+        
+        .bg-primary {
+            background-color: #B91C1C;
+        }
+        
+        .hover-primary:hover {
+            color: #991B1B;
+        }
+        
+        /* Button Styles */
+        .btn-primary {
+            background: linear-gradient(135deg, #B91C1C 0%, #991B1B 100%);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 10px 25px rgba(185, 28, 28, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        /* Status Badge */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .status-open {
+            background: #DCFCE7;
+            color: #166534;
+        }
+        
+        .status-closed {
+            background: #F3F4F6;
+            color: #6B7280;
+        }
+        
+        body.dark-mode .status-open {
+            background: #14532D;
+            color: #86EFAC;
+        }
+        
+        body.dark-mode .status-closed {
+            background: #374151;
+            color: #9CA3AF;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .status-open .status-dot {
+            background: #22C55E;
+        }
+        
+        .status-closed .status-dot {
+            background: #9CA3AF;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Blog Card Styles */
         .blog-card {
             transition: all 0.3s ease;
+            background: white;
+        }
+        
+        body.dark-mode .blog-card {
+            background: #1e293b;
         }
         
         .blog-card:hover {
@@ -46,14 +163,6 @@
             font-size: 0.75rem;
             font-weight: 600;
             border-radius: 9999px;
-        }
-        
-        .text-primary {
-            color: #B91C1C;
-        }
-        
-        .bg-primary {
-            background-color: #B91C1C;
         }
     </style>
 </head>
@@ -326,14 +435,9 @@
         </div>
     </footer>
 
+    <script src="app.js"></script>
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Category filter
+        // Category filter (blog-specific functionality)
         const filterButtons = document.querySelectorAll('.category-filter');
         const blogCards = document.querySelectorAll('.blog-card');
 

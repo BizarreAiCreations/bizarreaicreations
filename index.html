@@ -324,7 +324,7 @@
         }
         
         .fab-whatsapp {
-            background: #25D366;
+            background: #25D366 !important;
         }
         
         .fab-phone {
@@ -649,7 +649,7 @@
                             <i class="fas fa-calculator mr-2"></i>
                             Hemen Teklif Al
                         </a>
-                        <a href="https://wa.me/905445726657" target="_blank" class="btn-outline inline-flex items-center">
+                        <a href="https://wa.me/905445726657" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center transition-all duration-300 shadow-lg hover:shadow-xl">
                             <i class="fab fa-whatsapp mr-2"></i>
                             WhatsApp İletişim
                         </a>
@@ -721,7 +721,7 @@
     <section class="py-20 px-6 bg-gray-50">
         <div class="container mx-auto">
             <!-- Scroll anchor positioned above title -->
-            <div id="urunler" class="relative -top-24"></div>
+            <div id="urunler" style="position: relative; top: -120px; visibility: hidden;"></div>
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                     Öne Çıkan <span class="text-primary">Ürünlerimiz</span>
@@ -1047,8 +1047,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="iletisim" class="py-20 px-6 bg-gray-50">
+    <section class="py-20 px-6 bg-gray-50">
         <div class="container mx-auto">
+            <!-- Scroll anchor positioned above title -->
+            <div id="iletisim" style="position: relative; top: -120px; visibility: hidden;"></div>
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                     Bizimle <span class="text-primary">İletişime Geçin</span>
@@ -1274,7 +1276,7 @@
         <div class="fab-menu" id="fab-menu">
             <div class="flex items-center gap-3">
                 <span class="text-sm font-medium text-gray-700 bg-white px-3 py-2 rounded-lg shadow-lg">WhatsApp</span>
-                <a href="https://wa.me/905445726657" target="_blank" class="fab-button fab-whatsapp">
+                <a href="https://wa.me/905445726657" target="_blank" class="fab-button" style="background: #25D366;">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
