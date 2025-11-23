@@ -100,12 +100,93 @@
             color: #1e293b;
             overflow-x: hidden;
             transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative;
         }
         
-        /* Dark Mode */
+        /* The Twin Pillars (Jachin & Boaz) - Strength & Establishment */
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, 
+                rgba(185, 28, 28, 0.15) 0%, 
+                rgba(185, 28, 28, 0.3) 50%, 
+                rgba(185, 28, 28, 0.15) 100%);
+            z-index: 9999;
+            pointer-events: none;
+        }
+        
+        body::before {
+            left: 5%;
+        }
+        
+        body::after {
+            right: 5%;
+        }
+        
+        body.dark-mode::before,
+        body.dark-mode::after {
+            background: linear-gradient(to bottom, 
+                rgba(239, 68, 68, 0.2) 0%, 
+                rgba(239, 68, 68, 0.4) 50%, 
+                rgba(239, 68, 68, 0.2) 100%);
+        }
+        
+        /* The Tesselated Pavement - Duality Pattern */
+        .tessellated-pattern {
+            position: relative;
+        }
+        
+        .tessellated-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(45deg, rgba(0,0,0,0.03) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(0,0,0,0.03) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(0,0,0,0.03) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(0,0,0,0.03) 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        
+        body.dark-mode .tessellated-pattern::before {
+            background-image: 
+                linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255,255,255,0.02) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.02) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.02) 75%);
+        }
+        
+        /* Dark Mode - The Moon (Reflected Light from The East) */
         body.dark-mode {
             background: #0f172a;
             color: #e2e8f0;
+            position: relative;
+        }
+        
+        /* Celestial Glow from The East (Top Right) */
+        body.dark-mode::after {
+            content: '';
+            position: fixed;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, 
+                rgba(226, 232, 240, 0.03) 0%, 
+                rgba(226, 232, 240, 0.01) 40%, 
+                transparent 70%);
+            pointer-events: none;
+            z-index: 0;
         }
         
         body.dark-mode .bg-white {
@@ -191,30 +272,55 @@
             color: #991B1B;
         }
         
-        /* Corporate Card Style */
+        /* Corporate Card Style - The Ashlar Transformation (Rough to Perfect) */
         .corporate-card {
             background: #ffffff;
             border: 1px solid #e5e7eb;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: saturate(0.8) brightness(0.95);
+            position: relative;
+        }
+        
+        .corporate-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background: linear-gradient(135deg, 
+                rgba(185, 28, 28, 0) 0%, 
+                rgba(185, 28, 28, 0.03) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
         }
         
         .corporate-card:hover {
             border-color: #B91C1C;
-            box-shadow: 0 10px 30px rgba(185, 28, 28, 0.1);
-            transform: translateY(-4px);
+            box-shadow: 
+                0 10px 30px rgba(185, 28, 28, 0.15),
+                inset 0 0 20px rgba(185, 28, 28, 0.05);
+            transform: translateY(-6px) scale(1.02);
+            filter: saturate(1.2) brightness(1.05);
+        }
+        
+        .corporate-card:hover::after {
+            opacity: 1;
         }
         
         body.dark-mode .corporate-card {
             background: #1e293b;
             border-color: #334155;
+            filter: saturate(0.7) brightness(0.9);
         }
         
         body.dark-mode .corporate-card:hover {
-            border-color: #B91C1C;
-            box-shadow: 0 10px 30px rgba(185, 28, 28, 0.3);
+            border-color: #EF4444;
+            box-shadow: 
+                0 10px 30px rgba(239, 68, 68, 0.25),
+                inset 0 0 30px rgba(239, 68, 68, 0.08);
+            filter: saturate(1.1) brightness(1.1);
         }
         
-        /* Button Styles */
+        /* Button Styles - The North Star (Guidance) */
         .btn-primary {
             background: linear-gradient(135deg, #B91C1C 0%, #991B1B 100%);
             color: white;
@@ -224,11 +330,29 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '✦';
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
         
         .btn-primary:hover {
             box-shadow: 0 10px 25px rgba(185, 28, 28, 0.4);
             transform: translateY(-2px);
+            padding-left: 2.5rem;
+        }
+        
+        .btn-primary:hover::before {
+            opacity: 1;
         }
         
         .btn-outline {
@@ -577,6 +701,21 @@
             color: #B91C1C;
         }
         
+        /* Lux e Tenebris - Light from Above */
+        .shadow-divine {
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 -1px 3px 0 rgba(255, 255, 255, 0.05);
+        }
+        
+        body.dark-mode .shadow-divine {
+            box-shadow: 
+                0 6px 10px -1px rgba(0, 0, 0, 0.4),
+                0 2px 4px -1px rgba(0, 0, 0, 0.3),
+                0 -2px 4px 0 rgba(255, 255, 255, 0.03);
+        }
+        
         /* Partner Logo Grid */
         .partner-logo {
             height: 60px;
@@ -660,8 +799,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient pt-32 pb-20 px-6">
+    <!-- Hero Section - The Tesselated Pavement -->
+    <section class="hero-gradient pt-32 pb-20 px-6 tessellated-pattern">
         <div class="container mx-auto">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
@@ -1223,8 +1362,8 @@
     </section>
 
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-gray-300 pt-16 pb-8 px-6">
+    <!-- Footer - The Tesselated Pavement & Foundation -->
+    <footer class="bg-slate-900 text-gray-300 pt-16 pb-8 px-6 tessellated-pattern">
         <div class="container mx-auto">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <!-- Company Info -->
@@ -1294,6 +1433,33 @@
             
             <!-- Bottom Footer -->
             <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <!-- The All-Seeing Eye - Providence (Geometric Representation) -->
+                <div class="flex justify-center mb-6">
+                    <div class="relative inline-block" style="width: 40px; height: 36px;">
+                        <!-- Triangle -->
+                        <div style="
+                            width: 0;
+                            height: 0;
+                            border-left: 20px solid transparent;
+                            border-right: 20px solid transparent;
+                            border-bottom: 36px solid rgba(185, 28, 28, 0.3);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        "></div>
+                        <!-- Central Circle (The Eye) -->
+                        <div style="
+                            width: 8px;
+                            height: 8px;
+                            background: rgba(185, 28, 28, 0.6);
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 18px;
+                            left: 16px;
+                            box-shadow: 0 0 10px rgba(185, 28, 28, 0.4);
+                        "></div>
+                    </div>
+                </div>
                 <p>&copy; 2024 Abdülkadir Altınel Sigorta Aracılık Hizmetleri Ltd. Şti. Tüm hakları saklıdır.</p>
                 <p class="mt-2 text-gray-500">
                     <a href="#" class="hover:text-primary transition-colors">Gizlilik Politikası</a> | 
